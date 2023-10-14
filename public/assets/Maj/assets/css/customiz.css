@@ -1,0 +1,59 @@
+body {
+
+    padding-top: 48px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px;
+}
+
+.site-header .header-nav-wrap .header-nav>ul>li>a {
+    font-size: 18px;
+}
+
+.site-header .header-nav-wrap .header-nav>ul>li .header-nav-dd-wrap ul li a {
+    font-size: 15px;
+}
+
+.site-header .header-nav-wrap .header-nav>ul>li .header-nav-dd-wrap h4 {
+    font-size: 18px;
+}
+
+.h4,
+h4 {
+    /* font-size: 16px; */
+        font-style: initial;
+        font-weight: 300;
+        font-size: 20px;
+        /* line-height: 32px; */
+        /* text-align: right; */
+        font-family: 'PoppinsBold';
+}
+
+.h3,
+h3 {
+    font-size: 18px;
+    color: #666666;
+}
+
+.awards-wrap,
+h3 {
+    font-size: 18px;
+}
+
+.h4,
+h4 {
+    font-size: 25px;
+}
+
+.am-tabs-set-wrap.home-tabs-set .nav-tabs li:last-child a.active {
+    background-color: #fff!important;
+}
+
+.am-tabs-set-wrap.home-tabs-set .nav-tabs li:last-child a {
+    background-color: #134a88!important;
+}
+
+.am-tabs-set-wrap.home-tabs-set .card-soup .card:last-child .card-header {
+    background-color: rgba(0, 0, 0, .03) !important;
+}

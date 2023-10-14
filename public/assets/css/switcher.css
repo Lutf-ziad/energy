@@ -1,0 +1,219 @@
+.switcher-container span.switcher.switcher-1 input:checked {
+    background-color: #2d5d90;
+}
+.switcher-container span.switcher {
+    margin: 20px 0;
+    position: relative;
+    display: block;
+}
+.switcher-container .switcher [type=checkbox]:checked {
+    background-image: none;
+}
+.switcher-container span.switcher.switcher-1 input:not(:checked) {
+    background: #2d5d90;
+    transition: background .5s -.1s;
+}
+.switcher-container span.switcher.switcher-1 input {
+    transition: .25s -.1s;
+}
+.switcher-container .switcher [type=checkbox] {
+    border: none!important;
+}
+.switcher-container [type=checkbox]:checked {
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath d='M12.207 4.793a1 1 0 0 1 0 1.414l-5 5a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L6.5 9.086l4.293-4.293a1 1 0 0 1 1.414 0z'/%3E%3C/svg%3E);
+}
+.switcher-container [type=checkbox]:checked, [type=radio]:checked {
+    background-color: currentColor;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-color: transparent;
+}
+.switcher-container span.switcher input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 2.5rem;
+    outline: none;
+    position: relative;
+    width: 14rem;
+}
+.switcher-container .outline-none {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+.switcher-container .shadow-none {
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+}
+.switcher-container .shadow-none, .shadow-sm {
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+.switcher-container .rounded-3xl {
+    border-radius: 1.5rem;
+}
+.switcher-container span.switcher.switcher-1 input:checked {
+    background-color: #2d5d90;
+}
+
+.switcher-container .switcher [type=checkbox]:checked {
+    background-image: none;
+}
+.switcher-container span.switcher.switcher-1 input {
+    transition: .25s -.1s;
+}
+.switcher [type=checkbox] {
+    border: none!important;
+}
+.switcher-container [type=checkbox]:checked {
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath d='M12.207 4.793a1 1 0 0 1 0 1.414l-5 5a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L6.5 9.086l4.293-4.293a1 1 0 0 1 1.414 0z'/%3E%3C/svg%3E);
+}
+.switcher-container [type=checkbox]:checked, [type=radio]:checked {
+    background-color: currentColor;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-color: transparent;
+}
+.switcher-container span.switcher input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 2.5rem;
+    outline: none;
+    position: relative;
+    width: 20rem;
+}
+.switcher-container .outline-none {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+.switcher-container .shadow-none {
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+}
+.switcher-container .shadow-none, .switcher-container .shadow-sm {
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+.switcher-container .rounded-3xl {
+    border-radius: 1.5rem;
+}
+.switcher-container span.switcher.switcher-1 input:checked:before {
+    color: #2d5d90;
+    transition: color .5s .2s;
+}
+.switcher-container span.switcher.switcher-1 input:not(:checked):before {
+    color: #fff;
+    transition: color .5s;
+}
+.switcher-container span.switcher input:before {
+    content: "Periodic Maintenance";
+    left: 1rem;
+}
+
+.switcher-container span.switcher input:after,
+.switcher-container span.switcher input:before {
+    color: #fff;
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.switcher-container span.switcher.switcher-1 input:checked:after {
+    color: #fff;
+    transition: color .5s;
+}
+.switcher-container span.switcher.switcher-1 input:not(:checked):after {
+    color: #2d5d90;
+    transition: color .5s .2s;
+}
+.switcher-container span.switcher input:after {
+    content: "General Repair";
+    right: 1rem;
+}
+
+.switcher-container span.switcher.switcher-1 input:checked+label {
+    background: #fff;
+    left: 7px;
+    top: 7px;
+    width: 10rem;
+    transition: left .5s,right .4s .2s;
+}
+.switcher-container span.switcher.switcher-1 input:not(:checked)+label {
+    background: #fff;
+    right: 7px;
+    top: 7px;
+    width: 9rem;
+    transition: left .4s .2s,right .5s,background .35s -.1s;
+}
+.switcher-container span.switcher label {
+    top: 2.5px;
+}
+.switcher-container span.switcher label {
+    height: 1.7rem;
+    position: absolute;
+    z-index: 1;
+}
+.switcher-container .rounded-xl {
+    border-radius: 0.75rem;
+}
+
+.switch-toggle .switch {
+position: relative;
+display: inline-block;
+min-width: 60px;
+height: 34px;
+}
+
+.switch-toggle .switch input { 
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.switch-toggle .slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.switch-toggle .slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.switch-toggle input:checked + .slider {
+background-color: #2196F3;
+}
+
+.switch-toggle input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+.switch-toggle input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.switch-toggle .slider.round {
+border-radius: 34px;
+}
+
+.switch-toggle .slider.round:before {
+border-radius: 50%;
+}
