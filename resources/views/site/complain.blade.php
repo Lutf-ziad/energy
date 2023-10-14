@@ -26,7 +26,7 @@
         <div class="business-text-right">
             <div class="business-img-left">
                 <div class="business-img-inner-left">
-                    <img decoding="async" src="https://petromin.com/wp-content/uploads/2022/06/Shivi2.png" alt="كليانا سيفاغنانام image">
+                    <img decoding="async" src="{{asset('uploads/h1.jpg')}}" alt="كليانا سيفاغنانام image">
                 </div>
             </div>
             <div class="text-wrapper">
@@ -48,7 +48,7 @@
         <div class="business-text-right">
             <div class="business-img-left">
                 <div class="business-img-inner-left">
-                    <img decoding="async" src="https://petromin.com/wp-content/uploads/2022/06/Samir_Nawar.png" alt="سمير نوار image">
+                    <img decoding="async" src="{{asset('uploads/h22.jpg')}}" alt="سمير نوار image">
                 </div>
             </div>
             <div class="text-wrapper">
@@ -70,7 +70,7 @@
         <div class="business-text-right">
             <div class="business-img-left">
                 <div class="business-img-inner-left">
-                    <img decoding="async" src="https://petromin.com/wp-content/uploads/2022/06/sajid-Saeed.png" alt="ساجد سعيد image">
+                    <img decoding="async" src="{{asset('uploads/h.jpg')}}" alt="ساجد سعيد image">
                 </div>
             </div>
             <div class="text-wrapper">
@@ -92,7 +92,7 @@
         <div class="business-text-right">
             <div class="business-img-left">
                 <div class="business-img-inner-left">
-                    <img decoding="async" src="https://petromin.com/wp-content/uploads/2022/06/Gary-Flowm.png" alt="قاري بي فلوم image">
+                    <img decoding="async" src="{{asset('uploads/h.jpg')}}" alt="قاري بي فلوم image">
                 </div>
             </div>
             <div class="text-wrapper">
@@ -114,7 +114,7 @@
         <div class="business-text-right">
             <div class="business-img-left">
                 <div class="business-img-inner-left">
-                    <img decoding="async" src="https://petromin.com/wp-content/uploads/2022/06/Steve_Horne-3.png" alt="ستيف هورن image">
+                    <img decoding="async" src="{{asset('uploads/h1.jpg')}}" alt="ستيف هورن image">
                 </div>
             </div>
             <div class="text-wrapper">
@@ -136,7 +136,7 @@
         <div class="business-text-right">
             <div class="business-img-left">
                 <div class="business-img-inner-left">
-                    <img decoding="async" src="https://petromin.com/wp-content/uploads/2022/10/Tj-1.png" alt="طارق جافيد image">
+                    <img decoding="async" src="{{asset('uploads/h2.jpg')}}" alt="طارق جافيد image">
                 </div>
             </div>
             <div class="text-wrapper">
@@ -158,7 +158,7 @@
         <div class="business-text-right">
             <div class="business-img-left">
                 <div class="business-img-inner-left">
-                    <img decoding="async" src="https://petromin.com/wp-content/uploads/2022/10/Terence-Byrne.png" alt="تيرينس بيرن  image">
+                    <img decoding="async" src="{{asset('uploads/h22.jpg')}}" alt="تيرينس بيرن  image">
                 </div>
             </div>
             <div class="text-wrapper">
@@ -180,7 +180,7 @@
         <div class="business-text-right">
             <div class="business-img-left">
                 <div class="business-img-inner-left">
-                    <img decoding="async" src="https://petromin.com/wp-content/uploads/2022/06/Abdulwahab_Etani2-25x-1.png" alt="عبدالوهاب محمد عيتاني image">
+                    <img decoding="async" src="{{asset('uploads/h22.jpg')}}" alt="عبدالوهاب محمد عيتاني image">
                 </div>
             </div>
             <div class="text-wrapper">
@@ -202,7 +202,7 @@
         <div class="business-text-right">
             <div class="business-img-left">
                 <div class="business-img-inner-left">
-                    <img decoding="async" src="https://petromin.com/wp-content/uploads/2023/07/Sanjay-Pic-Edited-1.png" alt="سانجاي نيجام image">
+                    <img decoding="async" src="{{asset('uploads/h.jpg')}}" alt="سانجاي نيجام image">
                 </div>
             </div>
             <div class="text-wrapper">
