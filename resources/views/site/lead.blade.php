@@ -48,7 +48,7 @@
                                 <div class="history-content">
                                     <div class="title-top row-reverse">
                                         {{-- <div class="history-dot"></div> --}}
-                                        <div class "content-set">
+                                        <div class ="content-set">
                                             <div class="history-year">
                                                 1969
                                             </div>

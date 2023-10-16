@@ -103,7 +103,7 @@
                     <li class="li-wrapper">
                         <a href="{{ url('offers') }}" title="المنتجات" class="menu-item menu-item-type-post_type menu-item-object-page nav-link" target="">المنتجات</a>
                     </li>
-                    <li class "li-wrapper">
+                    <li class ="li-wrapper">
                         <a href="{{ url('complain') }}" title="فريق القادة" class="menu-item menu-item-type-post_type menu-item-object-page nav-link" target="">فريق القادة</a>
                     </li>
                     <li class="li-wrapper">
@@ -132,7 +132,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class "twitter">
+                    <div class ="twitter">
                         <a href="https://twitter.com/ " target="_blank">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="#3f4954" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="28" height="28" fill="#3f4954"></rect>
@@ -140,7 +140,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class "youtube">
+                    <div class ="youtube">
                         <a href="https://www.youtube.com/ " target="_blank">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="#3f4954" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="28" height="28" fill="#3f4954"></rect>

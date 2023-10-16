@@ -77,7 +77,7 @@
             <div class="tab-pane fade" id="tabchangan">
                 <div class="row">
                     <div class="col-md-6 order-md-1 tab-img-col">
-                        <img src="https://test.lar.u4e.net/uploads/h.jpg" alt="">
+                        <img src="{{ asset('uplods/hhh.jpg') }}" alt="">
                     </div>
                     <div class="col-md-6 text-right">
                         <div class="p-4">
@@ -273,4 +273,3 @@
         </div>
     </div>
 @endsection
-
