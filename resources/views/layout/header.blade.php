@@ -96,8 +96,8 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">الفروع</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">فریق الإدارة</a>
-                            <a class="dropdown-item" href="#">المبادرات</a>
+                            <a class="dropdown-item" href="{{ url('complain') }}">فریق الإدارة</a>
+                            <a class="dropdown-item" href="{{ url('Sustainability') }}>المبادرات</a>
                         </div>
                     </li>
                     <li class="li-wrapper">
