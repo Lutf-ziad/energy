@@ -2910,7 +2910,7 @@ body.mm-body-lock {
 }
 
 .business-vertical.leadership-cards .business-text-right .business-title {
-  background: linear-gradient(95.49deg, #52c1b2 0%, #62a7db 72.49%);
+  background: linear-gradient(95.49deg, #52c1b2 0%, #3f4954 72.49%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -3167,8 +3167,7 @@ html.lock {
   position: absolute;
   background: var(--business-theme-color);
   width: 100%;
-  max-width: 318px;
-  height: 16px;
+   height: 16px;
   transform: skew(-15deg);
   top: 27px;
   right: -300px;

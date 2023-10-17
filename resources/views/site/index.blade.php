@@ -1,7 +1,5 @@
 @extends('layout.main')
 @section('content')
-
-
     <section class="combo-company-growth video-banner">
         <div class="combo-company-growth-wrapper">
             <div class="container growth-plan-home">
@@ -13,19 +11,7 @@
                                     <div class="hm-slide">
                                         <img src="{{ asset('uploads/blog/slider.jpeg') }}" alt="hvh" class="hm-slide-banner">
                                         <div class="hm-slide-content">
-                                            <p>مرحبا بكم شركه مشاريع الطاقه</p>
-                                        </div>
-                                    </div>
-                                    <div class="hm-slide">
-                                        <img src="{{ asset('uploads/slider1.jpeg') }}" alt="" class="hm-slide-banner">
-                                        <div class="hm-slide-content">
-                                             <p>مرحبا في شركه مشاريع الطاقه</p>
-                                        </div>
-                                    </div>
-                                    <div class="hm-slide">
-                                        <img src="{{ asset('uploads/home.jpg') }}" alt="" class="hm-slide-banner">
-                                        <div class="hm-slide-content">
-                                             <p>مرحبا في شركه مشاريع الطاقه</p>
+                                            {{-- <p>مرحبا بكم شركه مشاريع الطاقه</p> --}}
                                         </div>
                                     </div>
 
@@ -53,9 +39,10 @@
             <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
                 <!--<li class="nav-item" role="presentation"><a class="nav-link active" data-toggle="tab" href="#tab1">ALL</a></li>-->
                 <li class="nav-item" role="presentation"><a class="nav-link active" data-toggle="tab" href="#tab1">عن الشركه</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="tab" href="#tabchangan">فروعنا</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="tab" href="#tabuni">النشرة الإخبارية</a>
-                </li><li class="nav-item" role="presentation"><a class="nav-link" data-toggle="tab" href="#tabuni2">ملف الشركة</a></li>                        </ul>
+                <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="tab" href="#tabuni">منتجاتنا</a>
+                    <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="tab" href="#tabchangan">فروعنا</a></li>
+                </li><li class="nav-item" role="presentation"><a class="nav-link" data-toggle="tab" href="#tabuni2"> اهدافنا  </a></li>
+               </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade active show" id="tab1">
                 <div class="row">
@@ -77,7 +64,7 @@
             <div class="tab-pane fade" id="tabchangan">
                 <div class="row">
                     <div class="col-md-6 order-md-1 tab-img-col">
-                        <img src="{{ asset('uplods/hhh.jpg') }}" alt="">
+                        <img src="{{ asset('uploads/hhh.jpg') }}" alt="">
                     </div>
                     <div class="col-md-6 text-right">
                         <div class="p-4">
@@ -101,7 +88,7 @@
                     </div>
                     <div class="col-md-6 text-right">
                         <div class="p-4">
-                            <h4>النشرة الإخبارية "صورة"</h4>
+                            <h4></h4>
                             <p>صورة ، النشرة الإخبارية ، النشر بواسطة مكتب الاتصالات المؤسسية.</p>
                             <a href="./newsletter" class="btn btn-primary">اكتشف واقرأ جميع إصدارات الصور</a>
                         </div>
@@ -116,7 +103,7 @@
                     </div>
                     <div class="col-md-6 text-right">
                         <div class="p-4">
-                            <h4>ملف الشركة</h4>
+                            <h4>  اهدافنا</h4>
                             <p>شركة مشاريع الطاقة تقدم مجموعة واسعة من المنتجات عالية الجودة في مجال الطاقة. تتخصص الشركة في توفير بطاريات ذات جودة عالية وأداء ممتاز. تتميز بطاريات شركة مشاريع الطاقة بالموثوقية والكفاءة، مما يسمح للعملاء بتخزين واستخدام الطاقة بشكل فعال.</p>
                             <a href="http://www.example.org" target="_blank" class="btn btn-primary">تعرف على المزيد</a>
                         </div>
@@ -200,23 +187,23 @@
                         <div class="swiper-wrapper blanding-row" id="swiper-wrapper-0a4581e84eb6b786" aria-live="polite">
                                                             <div class="swiper-slide blanding-wrap swiper-slide-active" role="group" aria-label="1 / 3" style="width: 379.333px; margin-left: 22px;">
                                     <div class="single-wrap">
-                                        <div class="title2">نعمل في</div>
-                                        <div class="title1">5</div>
-                                        <div class="title2">مناطق</div>
+                                        <div class="title2">فروعنا اكثر</div>
+                                        <div class="title1">150<sup>+<sup></div>
+                                        <div class="title2">فرع</div>
                                     </div>
                                 </div>
                                                             <div class="swiper-slide blanding-wrap swiper-slide-next" role="group" aria-label="2 / 3" style="width: 379.333px; margin-left: 22px;">
                                     <div class="single-wrap">
-                                        <div class="title2">عبر</div>
-                                        <div class="title1">40<sup>+<sup></sup></sup></div>
-                                        <div class="title2">دولة</div>
+                                        <div class="title2"> موضفينا اكثر</div>
+                                        <div class="title1">700<sup>+<sup></sup></sup></div>
+                                        <div class="title2">موضف</div>
                                     </div>
                                 </div>
                                                             <div class="swiper-slide blanding-wrap" role="group" aria-label="3 / 3" style="width: 379.333px; margin-left: 22px;">
                                     <div class="single-wrap">
-                                        <div class="title2">مع</div>
-                                        <div class="title1">6000<sup>+<sup></sup></sup></div>
-                                        <div class="title2">زميل</div>
+                                        <div class="title2">سنوات الخبرة </div>
+                                        <div class="title1">20<sup>+<sup></sup></sup></div>
+                                        <div class="title2">سنه</div>
                                     </div>
                                 </div>
                                                     </div>

@@ -29,10 +29,10 @@
                         </div>
                         <div class="text-wrapper">
                             <div class="business-title">
-                                كليانا سيفاغنانام
+                                صالح شوباص
                             </div>
                             <div class="business-designation">
-                                الرئيس التنفيذي لمجموعة شركة بترومين
+                                الرئيس التنفيذي لمجموعة  مشاريع الطاقه
                             </div>
                             <div class="business-description">
                             </div>
@@ -44,7 +44,7 @@
         <div class="business-vertical leadership-cards">
             <div class="container">
                 <div class="business">
-                    <div class "business-text-right">
+                    <div class ="business-text-right">
                         <div class="business-img-left">
                             <div class="business-img-inner-left">
                                 <img decoding="async" src="{{asset('uploads/h22.jpg')}}" alt="سمير نوار image">
@@ -52,7 +52,7 @@
                         </div>
                         <div class="text-wrapper">
                             <div class="business-title">
-                                سمير
+                                احمد شوباص
                             </div>
                             <div class="business-designation">
                                 عضو منتدب شركة
@@ -87,144 +87,7 @@
                 </div>
             </div>
         </div>
-        <div class="business-vertical leadership-cards">
-            <div class="container">
-                <div class="business">
-                    <div class="business-text-right">
-                        <div class="business-img-left">
-                            <div class="business-img-inner-left">
-                                <img decoding="async" src="{{asset('uploads/h.jpg')}}" alt="قاري بي فلوم image">
-                            </div>
-                        </div>
-                        <div class="text-wrapper">
-                            <div class="business-title">
-                                قاري بي فلوم
-                            </div>
-                            <div class="business-designation">
-                                الرئيس التنفيذي للشركة المتقدمة لحلول النقل
-                            </div>
-                            <div class="business-description">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="business-vertical leadership-cards">
-            <div class="container">
-                <div class="business">
-                    <div class="business-text-right">
-                        <div class="business-img-left">
-                            <div class="business-img-inner-left">
-                                <img decoding="async" src="{{asset('uploads/h1.jpg')}}" alt="ستيف هورن image">
-                            </div>
-                        </div>
-                        <div class="text-wrapper">
-                            <div class="business-title">
-                                ستيف
-                            </div>
-                            <div class="business-designation">
-                                الرئيس التنفيذي للشركة الوطنية المحدودة
-                            </div>
-                            <div class="business-description">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="business-vertical leadership-cards">
-            <div class="container">
-                <div class="business">
-                    <div class="business-text-right">
-                        <div class="business-img-left">
-                            <div class="business-img-inner-left">
-                                <img decoding="async" src="{{asset('uploads/h2.jpg')}}" alt="طارق جافيد image">
-                            </div>
-                        </div>
-                        <div class="text-wrapper">
-                            <div class="business-title">
-                                طارق جافيد
-                            </div>
-                            <div class="business-designation">
-                                الرئيس التنفيذي للشركة الوطنية
-                            </div>
-                            <div class="business-description">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="business-vertical leadership-cards">
-            <div class="container">
-                <div class="business">
-                    <div class="business-text-right">
-                        <div class="business-img-left">
-                            <div class="business-img-inner-left">
-                                <img decoding="async" src="{{asset('uploads/h22.jpg')}}" alt="تيرينس بيرن image">
-                            </div>
-                        </div>
-                        <div class="text-wrapper">
-                            <div class="business-title">
-                                تيرينس بيرن
-                            </div>
-                            <div class="business-designation">
-                                الرئيس التنفيذي للشركة
-                            </div>
-                            <div class "business-description">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="business-vertical leadership-cards">
-            <div class="container">
-                <div class="business">
-                    <div class="business-text-right">
-                        <div class="business-img-left">
-                            <div class="business-img-inner-left">
-                                <img decoding="async" src="{{asset('uploads/h22.jpg')}}" alt="عبدالوهاب محمد عيتاني image">
-                            </div>
-                        </div>
-                        <div class="text-wrapper">
-                            <div class="business-title">
-                                عبدالوهاب محمد
-                            </div>
-                            <div class="business-designation">
-                                الرئيس التنفيذي ونائب الرئيس التنفيذي لتطوير الأعمال
-                            </div>
-                            <div class="business-description">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="business-vertical leadership-cards">
-            <div class="container">
-                <div class="business">
-                    <div class="business-text-right">
-                        <div class="business-img-left">
-                            <div class="business-img-inner-left">
-                                <img decoding="async" src="{{asset('uploads/h.jpg')}}" alt="سانجاي نيجام image">
-                            </div>
-                        </div>
-                        <div class="text-wrapper">
-                            <div class="business-title">
-                                سانجاي نيجام
-                            </div>
-                            <div class="business-designation">
-                                الرئيس التنفيذي الهند وجنوب شرق آسيا
-                            </div>
-                            <div class="business-description">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div><!-- .entry-content -->
 </article><!-- #post-## -->
 

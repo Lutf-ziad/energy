@@ -6458,7 +6458,8 @@ pre code {
 	position: relative;
 	width: 100%;
 	padding-right: 15px;
-	padding-left: 15px
+	padding-left: 15px;
+
 }
 
 .col {
@@ -7212,7 +7213,8 @@ pre code {
 	.col-xl-3 {
 		-ms-flex: 0 0 25%;
 		flex: 0 0 25%;
-		max-width: 25%
+		max-width: 25%;
+
 	}
 	.col-xl-4 {
 		-ms-flex: 0 0 33.33333%;
@@ -14289,7 +14291,8 @@ button.bg-dark:hover {
 .site-footer .footer-links,
 .site-header .header-nav-wrap .header-nav>ul>li .header-nav-dd-wrap h4,
 .site-header .header-nav-wrap .header-nav>ul>li .header-nav-dd-wrap ul {
-	margin-bottom: 1rem!important
+	margin-bottom: 1rem!important;
+
 }
 
 .ml-3,
