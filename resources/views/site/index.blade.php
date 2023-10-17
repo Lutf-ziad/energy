@@ -1,37 +1,66 @@
 @extends('layout.main')
 @section('content')
-    <section class="combo-company-growth video-banner">
-        <div class="combo-company-growth-wrapper">
-            <div class="container growth-plan-home">
-                <section class="combo-company-growth video-banner">
-                    <div class="combo-company-growth-wrapper">
-                        <div class="container growth-plan-home">
-                            <div class="hm-slider-wrap">
-                                <div class="hm-slider owl-carousel owl-theme" id="hmSlider">
-                                    <div class="hm-slide">
-                                        <img src="{{ asset('uploads/blog/slider.jpeg') }}" alt="hvh" class="hm-slide-banner">
-                                        <div class="hm-slide-content">
-                                            {{-- <p>مرحبا بكم شركه مشاريع الطاقه</p> --}}
-                                        </div>
-                                    </div>
+    <article id="post-55" class="post-55 page type-page status-publish hentry">
+        <div class="entry-content">
+            <section class="combo-company-growth video-banner">
+                <div class="combo-company-growth-wrapper">
+                    <div class="container growth-plan-home">
+                        <div class="growth-img">
+                            <img decoding="async" src={{ asset('uploads/blog/slider.jpeg') }} >
+                            <div class="growth-text">
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                                </div>
+            <div class="about-us-section about-us-style-2">
+                <div class="container">
+                    <div class="first-row-wrapper row">
+                        <div class="col-lg-12 col-12 about-us ordering-1">
+                            <h1 class="sec-title">مرحبا بكم في شركة مشاريع الطاقة </h1>
+                            <div class="about-us-desc">
+                             <p> شركة مشاريع الطاقة تقدم مجموعة واسعة من المنتجات عالية الجودة في مجال الطاقة. تتخصص الشركة في توفير بطاريات ذات جودة عالية وأداء ممتاز.تتميز بطاريات شركة مشاريع الطاقة بالموثوقية والكفاءة، مما يسمح للعملاء بتخزين واستخدام الطاقة بشكل فعال. تتوفر مجموعة متنوعة من بطاريات الطاقة، بما في ذلك بطاريات الليثيوم والرصاص الحمضية والنيكل-كادميوم، وتتواجد بطاريات بقدرات مختلفة لتلبية احتياجات مختلف العملاء شركة مشاريع الطاقة بالموثوقية</p>
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
-        </div>
-    </section>
-    <div class="page-sec welcome-sec">
-        <div class="container-fluid mw-1200  ">
-                 <h1 class="sec-title">مرحبا بكم في شركة مشاريع الطاقة </h1>
-                 <div class="about-us-desc">
-                    <p> شركة مشاريع الطاقة تقدم مجموعة واسعة من المنتجات عالية الجودة في مجال الطاقة. تتخصص الشركة في توفير بطاريات ذات جودة عالية وأداء ممتاز.تتميز بطاريات شركة مشاريع الطاقة بالموثوقية والكفاءة، مما يسمح للعملاء بتخزين واستخدام الطاقة بشكل فعال. تتوفر مجموعة متنوعة من بطاريات الطاقة، بما في ذلك بطاريات الليثيوم والرصاص الحمضية والنيكل-كادميوم، وتتواجد بطاريات بقدرات مختلفة لتلبية احتياجات مختلف العملاء شركة مشاريع الطاقة بالموثوقية</p>
                 </div>
-         </div>
-    </div>
+            </div>
 
+            <section class="about-specs style-2-about-specs">
+                <div class="container">
+                    <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl" id="about-specs-slider">
+                        <div class="swiper-wrapper blanding-row" id="swiper-wrapper-a35641e911821eb7" aria-live="polite">
+                            <div class="swiper-slide blanding-wrap swiper-slide-active" role="group" aria-label="1 / 3" style="width: 379.333px; margin-left: 22px;">
+                                <div class="single-wrap">
+                                    <div class="title2">فروعنا  </div>
+                                    <div class="title1">150<sup>+<sup></div>
+                                    <div class="title2">فرع</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide blanding-wrap swiper-slide-next" role="group" aria-label="2 / 3" style="width: 379.333px; margin-left: 22px;">
+                                <div class="single-wrap">
+                                    <div class="title2"> موضفينا  </div>
+                                    <div class="title1">700<sup>+<sup></sup></sup></div>
+                                    <div class="title2">موضف</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide blanding-wrap" role="group" aria-label="3 / 3" style="width: 379.333px; margin-left: 22px;">
+                                <div class="single-wrap">
+                                    <div class="title2">سنوات الخبرة </div>
+                                        <div class="title1">20<sup>+<sup></sup></sup></div>
+                                        <div class="title2">سنه</div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- .entry-content -->
+    </article>
 
     <div class="news-sec">
     <div class="am-tabs-set-wrap home-tabs-set" dir="rtl">
@@ -168,95 +197,6 @@
             </div>
         </div>
     </div>
-    <div class="news-sec">
-        <div class="container-fluid mw-1200">
-                         <h2>الجوائز وشهادات التقدير</h2>
-                         <div class="d-flex align-items-center">
-                <a href="{{ url('lead') }}" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Award', '', '{{asset('uploads/111-01-01-01.png')}}', 1)">
-                    <img id="Award" src="{{asset('uploads/2114-01.png')}}" alt=""></a>
-            </div>
-            <hr>
-        </div>
-    </div>
-    <div class="news-sec">
-        <div class="container-fluid mw-1200">
-            <h2> احصائياتنا  </h2>
-            <section class="about-specs style-2-about-specs">
-                <div class="container">
-                    <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl" id="about-specs-slider">
-                        <div class="swiper-wrapper blanding-row" id="swiper-wrapper-0a4581e84eb6b786" aria-live="polite">
-                                                            <div class="swiper-slide blanding-wrap swiper-slide-active" role="group" aria-label="1 / 3" style="width: 379.333px; margin-left: 22px;">
-                                    <div class="single-wrap">
-                                        <div class="title2">فروعنا اكثر</div>
-                                        <div class="title1">150<sup>+<sup></div>
-                                        <div class="title2">فرع</div>
-                                    </div>
-                                </div>
-                                                            <div class="swiper-slide blanding-wrap swiper-slide-next" role="group" aria-label="2 / 3" style="width: 379.333px; margin-left: 22px;">
-                                    <div class="single-wrap">
-                                        <div class="title2"> موضفينا اكثر</div>
-                                        <div class="title1">700<sup>+<sup></sup></sup></div>
-                                        <div class="title2">موضف</div>
-                                    </div>
-                                </div>
-                                                            <div class="swiper-slide blanding-wrap" role="group" aria-label="3 / 3" style="width: 379.333px; margin-left: 22px;">
-                                    <div class="single-wrap">
-                                        <div class="title2">سنوات الخبرة </div>
-                                        <div class="title1">20<sup>+<sup></sup></sup></div>
-                                        <div class="title2">سنه</div>
-                                    </div>
-                                </div>
-                                                    </div>
-                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                </div>
-            </section>
-    </div>
   </div>
-    <div class="offers-sec">
-        <div class="container-fluid mw-1200">
-            <h2>عروض خاصة</h2>
-            <div class="row">
-                <div class="col-sm-6 col-lg-3">
-                    <div class="offer-box">
-                        <div class="embed-responsive embed-responsive-1by1">
-                            <a href="offer-detail.php.html?id=136"><img
-                                    src="{{asset('uploads/new10.jpeg')}}" alt=""
-                                    class="embed-responsive-item"></a>
-                        </div>
-                        <a href="{{ url('offer-detail') }}" class="btn btn-outline-primary"><span>مشاهده</span></a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="offer-box">
-                        <div class="embed-responsive embed-responsive-1by1">
-                            <a href="offer-detail.php-1.html?id=131"><img
-                                    src="{{asset('uploads/new7.jpeg')}}" alt=""
-                                    class="embed-responsive-item"></a>
-                        </div>
-                        <a href="offer-detail.php-1.html?id=131" class="btn btn-outline-primary"><span>مشاهده</span></a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="offer-box">
-                        <div class="embed-responsive embed-responsive-1by1">
-                            <a href="offer-detail.php-2.html?id=130"><img
-                                    src="{{asset('uploads/new6.jpeg')}}" alt=""
-                                    class="embed-responsive-item"></a>
-                        </div>
-                        <a href="offer-detail.php-2.html?id=130" class="btn btn-outline-primary"><span>مشاهده</span></a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="offer-box">
-                        <div class="embed-responsive embed-responsive-1by1">
-                            <a href="offer-detail.php-3.html?id=129"><img
-                                    src="{{asset('uploads/new10.jpeg')}}" alt=""
-                                    class="embed-responsive-item"></a>
-                        </div>
-                        <a href="offer-detail.php-3.html?id=129" class="btn btn-outline-primary"><span>مشاهده</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 @endsection

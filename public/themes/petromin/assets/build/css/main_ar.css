@@ -1563,9 +1563,12 @@ body.mm-body-lock {
 .about-us-section {
   padding-top: 16px;
   overflow: hidden;
+  text-align: right;
+
 }
 
 .about-us-section .first-row-wrapper .about-us .about-us-title {
+
   font-style: italic;
   font-weight: 800;
   font-size: 56px;
@@ -1941,8 +1944,8 @@ body.mm-body-lock {
 }
 
 .rtl .about-us-section .first-row-wrapper .about-us .about-us-title {
-  font-style: initial;
-  font-family: DinArabic !important;
+    font-style: initial;
+    font-family: DinArabic !important;
 }
 
 .rtl .blanding-row .blanding-wrap:after,
