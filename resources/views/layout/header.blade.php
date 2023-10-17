@@ -40,9 +40,9 @@
                             <li class="li-wrapper">
                                 <a href="{{ url('lead') }}" title="الإنجازات والجوائز" class="menu-item menu-item-type-post_type menu-item-object-page nav-link" target="">الإنجازات والجوائز</a>
                             </li>
-                            <li class="li-wrapper">
+                            {{-- <li class="li-wrapper">
                                 <a href="{{ url('complain') }}" title="فريق القادة" class="menu-item menu-item-type-post_type menu-item-object-page nav-link" target="">فريق القادة</a>
-                            </li>
+                            </li> --}}
                             <li class="li-wrapper">
                                 <a href="{{ url('offers') }}" title="المنتجات" class="menu-item menu-item-type-post_type menu-item-object-page nav-link" target="">المنتجات</a>
                             </li>

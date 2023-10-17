@@ -146,57 +146,85 @@
     </div>
     <div class="news-sec">
         <div class="container-fluid mw-1200">
-            <h2>اخر الاخبار</h2>
-
-             <div class="new-slider owl-carousel owl-theme" id="newsSlider">
-                     <div class="news-box">
-                        <a href="" class="news-box-thumb">
-                            <img src="{{ asset('uploads/new10.jpeg') }}"  >
-                            <span href="{{ url('new_details') }}" class="fa fa-link"></span>
-                        </a>
-                        <div class="news-box-info">
-                            <h5><a href=" ">معلومه شامله عن بطاريه السياره</a></h5>
-                            <p> {{ substr("تعتبر بطارية السيارة من أنواع البطاريات القابلة للشحن ومهمتها تشغيل المحرّك الكهربائي، أو ما يُعرف بالدينامو الذي يكون في العادة مسؤولاً عن تشغيل محرّك السيارة التقليدي، أي محرك الاحتراق الداخلي سواءً كان يعمل بالديزل أو البنزين. وبالإضافة إلى ذلك، يتوجب على البطارية أن توفر الطاقة اللازمة لإنارة مقصورة السيارة الداخلية والمصابيح الخارجية. سنتحدث في هذا المقال عن معلومات عن بطارية السيارة من الألف إلى ", 0, 200) }} </p>
-                            <small class="d-block text-muted"><i class="fa fa-calendar-alt"></i> 12:57 PM </small>
+            <h2>آخر الأخبار</h2>
+            <div class="new-slider owl-carousel owl-theme owl-loaded owl-drag" id="newsSlider">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage" style="transform: translate3d(-1200px, 0px, 0px); transition: all 0.25s ease 0s; width: 4400px;">
+                        <!-- Individual News Items -->
+                        <!-- 1st News Item -->
+                        <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
+                            <div class="news-box">
+                                <a href="news.php?id=37" class="news-box-thumb">
+                                    <img src="{{ asset('uploads/new10.jpeg') }}" alt="معلومة شاملة عن بطارية السيارة">
+                                    <span class="fa fa-link"></span>
+                                </a>
+                                <div class="news-box-info">
+                                    <h5><a href="news.php?id=37">معلومة شاملة عن بطارية السيارة</a></h5>
+                                     <p>
+                                        {{ substr("تعتبر بطارية السيارة من أنواع البطاريات القابلة للشحن ومهمتها تشغيل المحرّك الكهربائي", 0, 200) }}
+                                    </p>
+                                    <small class="d-block text-muted"><i class="fa fa-calendar-alt"></i> 18-07-2023</small>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="news-box">
-                        <a href="" class="news-box-thumb">
-                            <img src="{{ asset('uploads/new9.jpeg') }}"  >
-                            <span href=" " class="fa fa-link"></span>
-                        </a>
-                        <div class="news-box-info">
-                            <h5><a href=" ">معلومه شامله عن بطاريه السياره</a></h5>
-                            <p> {{ substr("تعتبر بطارية السيارة من أنواع البطاريات القابلة للشحن ومهمتها تشغيل المحرّك الكهربائي، أو ما يُعرف بالدينامو الذي يكون في العادة مسؤولاً عن تشغيل محرّك السيارة التقليدي، أي محرك الاحتراق الداخلي سواءً كان يعمل بالديزل أو البنزين. وبالإضافة إلى ذلك، يتوجب على البطارية أن توفر الطاقة اللازمة لإنارة مقصورة السيارة الداخلية والمصابيح الخارجية. سنتحدث في هذا المقال عن معلومات عن بطارية السيارة من الألف إلى ", 0, 200) }} </p>
-                            <small class="d-block text-muted"><i class="fa fa-calendar-alt"></i>  12:57 PM </small>
+                        <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
+                            <div class="news-box">
+                                <a href="news.php?id=37" class="news-box-thumb">
+                                    <img src="{{ asset('uploads/new7.jpeg') }}" alt="معلومة شاملة عن بطارية السيارة">
+                                    <span class="fa fa-link"></span>
+                                </a>
+                                <div class="news-box-info">
+                                     <h5><a href="news.php?id=37">معلومة شاملة عن بطارية السيارة</a></h5>
+                                    <p>
+                                        {{ substr("تعتبر بطارية السيارة من أنواع البطاريات القابلة للشحن ومهمتها تشغيل المحرّك الكهربائي", 0, 200) }}
+                                    </p>
+                                    <small class="d-block text-muted"><i class="fa fa-calendar-alt"></i> 18-07-2023</small>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="news-box">
-                        <a href="{{ url('new_details') }}" class="news-box-thumb">
-                            <img src="{{ asset('uploads/new8.jpeg') }}"  >
-                            <span href=" " class="fa fa-link"></span>
-                        </a>
-                        <div class="news-box-info">
-                            <h5><a href=" ">معلومه شامله عن بطاريه السياره</a></h5>
-                            <p> {{ substr("تعتبر بطارية السيارة من أنواع البطاريات القابلة للشحن ومهمتها تشغيل المحرّك الكهربائي، أو ما يُعرف بالدينامو الذي يكون في العادة مسؤولاً عن تشغيل محرّك السيارة التقليدي، أي محرك الاحتراق الداخلي سواءً كان يعمل بالديزل أو البنزين. وبالإضافة إلى ذلك، يتوجب على البطارية أن توفر الطاقة اللازمة لإنارة مقصورة السيارة الداخلية والمصابيح الخارجية. سنتحدث في هذا المقال عن معلومات عن بطارية السيارة من الألف إلى ", 0, 200) }} </p>
-                            <small class="d-block text-muted"><i class="fa fa-calendar-alt"></i>  12:57 PM </small>
+                        <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
+                            <div class="news-box">
+                                <a href="news.php?id=37" class="news-box-thumb">
+                                    <img src="{{ asset('uploads/new8.jpeg') }}" alt="معلومة شاملة عن بطارية السيارة">
+                                    <span class="fa fa-link"></span>
+                                </a>
+                                <div class="news-box-info">
+                                    <h5><a href="news.php?id=37">معلومة شاملة عن بطارية السيارة</a></h5>
+                                     <p>
+                                        {{ substr("تعتبر بطارية السيارة من أنواع البطاريات القابلة للشحن ومهمتها تشغيل المحرّك الكهربائي", 0, 200) }}
+                                    </p>
+                                    <small class="d-block text-muted"><i class="fa fa-calendar-alt"></i> 18-07-2023</small>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="news-box">
-                        <a href="" class="news-box-thumb">
-                            <img src="{{ asset('uploads/new7.jpeg') }}"  >
-                            <span href=" " class="fa fa-link"></span>
-                        </a>
-                        <div class="news-box-info">
-                            <h5><a href=" ">معلومه شامله عن بطاريه السياره</a></h5>
-                            <p> {{ substr("تعتبر بطارية السيارة من أنواع البطاريات القابلة للشحن ومهمتها تشغيل المحرّك الكهربائي، أو ما يُعرف بالدينامو الذي يكون في العادة مسؤولاً عن تشغيل محرّك السيارة التقليدي، أي محرك الاحتراق الداخلي سواءً كان يعمل بالديزل أو البنزين. وبالإضافة إلى ذلك، يتوجب على البطارية أن توفر الطاقة اللازمة لإنارة مقصورة السيارة الداخلية والمصابيح الخارجية. سنتحدث في هذا المقال عن معلومات عن بطارية السيارة من الألف إلى ", 0, 200) }} </p>
-                            <small class="d-block text-muted"><i class="fa fa-calendar-alt"></i>   12:57 PM</small>
+                        <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
+                            <div class="news-box">
+                                <a href="news.php?id=37" class="news-box-thumb">
+                                    <img src="{{ asset('uploads/new9.jpeg') }}" alt="معلومة شاملة عن بطارية السيارة">
+                                    <span class="fa fa-link"></span>
+                                </a>
+                                <div class="news-box-info">
+                                    <h5><a href="news.php?id=37">معلومة شاملة عن بطارية السيارة</a></h5>
+                                    <p>
+                                        {{ substr("تعتبر بطارية السيارة من أنواع البطاريات القابلة للشحن ومهمتها تشغيل المحرّك الكهربائي", 0, 200) }}
+                                    </p>
+                                    <small class="d-block text-muted"><i class="fa fa-calendar-alt"></i> 18-07-2023</small>
+                                </div>
+                            </div>
                         </div>
+                        <!-- More similar News Items (Repeat the structure for other news items) -->
                     </div>
+                </div>
+                <div class="owl-nav disabled">
+                    <button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button>
+                    <button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button>
+                </div>
 
             </div>
         </div>
     </div>
+
+
   </div>
 
 @endsection

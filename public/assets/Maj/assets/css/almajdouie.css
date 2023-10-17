@@ -10211,7 +10211,7 @@
 
  .nav-pills .nav-link {
      border-radius: .25rem;
-     font-size: 1.125rem;
+     /* font-size: 1.125rem; */
  }
 
  .nav-pills .nav-link.active,
@@ -16433,7 +16433,7 @@
  }
 
  body {
-     background-color: #ededed;
+     background-color: #fff;
      font-family: tahoma;
      font-size: 1rem;
      overflow-x: hidden
