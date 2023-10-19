@@ -6,7 +6,7 @@
                 <div class="combo-company-growth-wrapper">
                     <div class="container growth-plan-home">
                         <div class="growth-img">
-                            <img decoding="async" src={{ asset('uploads/blog/slider.jpeg') }} >
+                            <img decoding="async" src={{ asset('uploads/silder3.jpg') }} >
                             <div class="growth-text">
                              </div>
                         </div>
@@ -146,8 +146,9 @@
           </div>
         </div>
     </div>
+
     <div class="news-sec">
-        <div class="container-fluid mw-1200">
+        {{-- <div class="container-fluid mw-1200">
             <h2>كلمه رائيس مجلس الاداره</h2>
      <div class="business-vertical leadership-cards">
         <div class="container">
@@ -170,7 +171,35 @@
                 </div>
             </div>
         </div>
+    </div> --}}
+    <div class="business-vertical">
+        <div class="container-fluid mw-1200">
+            <h2>كلمة رئيس مجلس الإدارة</h2>
+            <div class="container">
+                <div class="business" style="--business-theme-color:#3f4954;">
+                    <div class="business-text-right">
+                        <div class="business-img-left">
+                            <img decoding="async" src="{{ asset('uploads/Compny.jpg') }}">
+                        </div>
+                        <div class="text-wrapper">
+                            <div class="business-title">
+                                عبد المجيد شوباص
+                            </div>
+                            <div class="business-description">
+                                تتطلب صناعة بيع البطاريات تفانٍ واهتماماً مستمراً، ونحن كفريق قادة ملتزمون بالارتقاء بأدائنا وتحقيق رؤيتنا المستقبلية.
+                                شركتنا تسعى دائماً لتقديم أعلى مستوى من الخدمة والمنتجات لعملائنا. نحن ندرك أهمية الابتكار والاستدامة في هذا القطاع المتنافس، ونتطلع دائماً للتطور واستكشاف فرص جديدة لتحقيق النمو.
+                                يجب أن نواصل التركيز على تحسين الجودة والكفاءة في عمليات الشركة والتسويق وتوسيع دائرة عملائنا. من خلال التعاون الوثيق بين أعضاء المجلس والإدارة التنفيذية وجميع الموظفين، سنستطيع تحقيق أهدافنا بنجاح
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    </div>
+
     </div>
     <div class="news-sec">
         <div class="container-fluid mw-1200">

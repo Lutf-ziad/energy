@@ -10214,6 +10214,8 @@
  .nav-pills .nav-link {
      border-radius: .25rem;
      /* font-size: 1.125rem; */
+     font-size: 1.21rem;
+
  }
 
  .nav-pills .nav-link.active,

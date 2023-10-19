@@ -2221,6 +2221,7 @@ body.mm-body-lock {
   .growth-img
   img {
   width: 100%;
+  margin-top: 1.2%;
 }
 
 .combo-company-growth
@@ -3157,6 +3158,7 @@ html.lock {
 .business-vertical .business .business-img-right img {
   display: block;
   width: 100%;
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
 }
 
 .business-vertical .business .business-img-left {

@@ -14,10 +14,8 @@
     <link rel="stylesheet" href="{{ asset('assets/build/app.min-1.css')}}">
     <link rel="stylesheet" href="{{ asset('assets/css/custom-1.css')}}">
 <link rel="manifest" href=" {{ asset('assets/Maj/assets/favicons/manifest.json"') }}>
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content=" {{ asset('uploads/logo-01.png') }}">
-<meta name="theme-color" content="#ffffff">
- <link rel="stylesheet" href=" {{ asset('assets/Maj/assets/css/aos.css') }}">
+ <meta name="msapplication-TileImage" content=" {{ asset('uploads/logo-01.png') }}">
+<link rel="stylesheet" href=" {{ asset('assets/Maj/assets/css/aos.css') }}">
 <link rel="stylesheet" href=" {{ asset('assets/Maj/assets/css/almajdouie.css') }}">
 <link rel="stylesheet" href=" {{ asset('assets/Maj/assets/css/customiz.css') }}">
 <link rel="stylesheet" href=" {{ asset('assets/Maj/assets/css/custom.css') }}">
