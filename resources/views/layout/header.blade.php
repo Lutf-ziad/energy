@@ -56,9 +56,9 @@
                             <li class="li-wrapper">
                                 <a href="{{ url('about') }}" title="من نحن" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-55 current_page_item nav-link" target="">من نحن</a>
                             </li>
-                            <li class="li-wrapper">
+                            {{-- <li class="li-wrapper">
                                 <a href="{{ url('services') }}" title="  كلمة رئيس مجلس الإدارة" class="menu-item menu-item-type-post_type menu-item-object-page nav-link" target="">   كلمة رئيس مجلس الإدارة</a>
-                            </li>
+                            </li> --}}
                             <li class="li-wrapper">
                                 <a href="{{ url('/') }}" title="الرئيسية" class="menu-item menu-item-type-post_type menu-item-object-page nav-link" target="">الرئيسية</a>
                             </li>

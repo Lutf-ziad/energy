@@ -7213,7 +7213,9 @@
      .col-xl-3 {
          -ms-flex: 0 0 25%;
          flex: 0 0 25%;
-         max-width: 25%
+         max-width: 25%;
+         margin-top: 3%;
+
      }
      .col-xl-4 {
          -ms-flex: 0 0 33.33333%;
@@ -10150,7 +10152,7 @@
      -ms-flex-wrap: wrap;
      flex-wrap: wrap;
      padding-left: 0;
-     margin-bottom: 0;
+     margin-bottom: 3%;
      list-style: none;
      margin-right: -3.2%;
  }
@@ -16949,7 +16951,9 @@
      min-width: 100%;
      width: auto;
      height: auto;
-     object-fit: cover
+     object-fit: cover;
+     border-radius: 3%;
+
  }
 
  .am-tabs-set-wrap.home-tabs-set .card-soup .card:last-child .card-header {

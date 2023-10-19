@@ -1716,7 +1716,7 @@ body.mm-body-lock {
   right: 10px;
   top: 22px;
   background: #3f4954;
-  box-shadow: 0px 30px 32px rgba(200, 40, 40, 0.5);
+  box-shadow: 0px 30px 32px rgba(158, 197, 103, 0.5);
   transform: skew(-10deg);
 }
 
@@ -2927,6 +2927,8 @@ body.mm-body-lock {
   line-height: 20px;
   color: #52c1b2;
   padding-bottom: 16px;
+  text-align: center;
+
 }
 
 .business-vertical.leadership-cards .business-img-left:after {
@@ -3135,6 +3137,8 @@ html.lock {
 .business-vertical .business {
   display: flex;
   margin-bottom: 56px;
+  margin-right: -20%;
+
 }
 
 .business-vertical .business .display-mobile {
@@ -3232,8 +3236,8 @@ html.lock {
 }
 
 .business-vertical .business .business-text-right .text-wrapper {
-  width: 50%;
-  padding-right: 150px;
+  width: 80%;
+  padding-right: 230px;
 }
 
 .business-vertical .business .business-text-right .business-title {
@@ -3245,6 +3249,8 @@ html.lock {
   text-transform: capitalize;
   color: var(--business-theme-color);
   padding-bottom: 8px;
+  margin-left: 40%;
+
 }
 
 .business-vertical .business .business-text-right .main-yellow {
@@ -3256,13 +3262,13 @@ html.lock {
 }
 
 .business-vertical .business .business-text-right .business-description {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 28px;
-  color: #1b1b1b;
-  padding-bottom: 16px;
-}
+    /* padding-top: 48px; */
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px;
+    text-align: right;
+ }
 
 .business-vertical .business .business-text-right .section-heading {
   margin-right: -8px;
@@ -3920,6 +3926,7 @@ html.lock {
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
+  text-align: right;
   /* identical to box height, or 120% */
   margin-bottom: 24px;
   margin-top: 24px;
@@ -4321,6 +4328,8 @@ html.lock {
     background: #52c1b2;
     box-shadow: 0px 20px 32px rgba(200, 40, 40, 0.5);
     margin: 0 16px;
+    text-align: right;
+
   }
 
   .history-milestones
@@ -9120,8 +9129,9 @@ header .sec-menu.icon-list li a.lang-item.lang-item-first.lang-item-ar {
 }
 
 .newsroom-section .services-listing .services-card .components {
-  text-align: start;
-  padding: 0 24px;
+   padding: 0 24px;
+   text-align: right;
+
 }
 
 .newsroom-section .services-listing .services-card .components .category {
@@ -9946,7 +9956,7 @@ header .sec-menu.icon-list li a.lang-item.lang-item-first.lang-item-ar {
 .our-growth-title .services-and-promotions .title-promotions {
   padding-bottom: 8px;
   text-align: center;
-  margin-top: 12%;
+  margin-top: 16%;
 
 
 }
@@ -11993,6 +12003,8 @@ header .sec-menu.icon-list li a.lang-item.lang-item-first.lang-item-ar {
 
 .parts-landing-section .parts-container {
   position: relative;
+  margin-top: 5%;
+
 }
 
 .parts-landing-section .parts-container:before {

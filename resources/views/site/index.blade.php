@@ -18,7 +18,7 @@
                 <div class="container">
                     <div class="first-row-wrapper row">
                         <div class="col-lg-12 col-12 about-us ordering-1">
-                            <h1 class="sec-title">مرحبا بكم في شركة مشاريع الطاقة </h1>
+                            <h1 class="sec-title">   شركة مشاريع الطاقة </h1>
                             <div class="about-us-desc">
                              <p> شركة مشاريع الطاقة تقدم مجموعة واسعة من المنتجات عالية الجودة في مجال الطاقة. تتخصص الشركة في توفير بطاريات ذات جودة عالية وأداء ممتاز.تتميز بطاريات شركة مشاريع الطاقة بالموثوقية والكفاءة، مما يسمح للعملاء بتخزين واستخدام الطاقة بشكل فعال. تتوفر مجموعة متنوعة من بطاريات الطاقة، بما في ذلك بطاريات الليثيوم والرصاص الحمضية والنيكل-كادميوم، وتتواجد بطاريات بقدرات مختلفة لتلبية احتياجات مختلف العملاء شركة مشاريع الطاقة بالموثوقية</p>
                             </div>
@@ -61,7 +61,6 @@
     </div>
     <!-- .entry-content -->
     </article>
-
     <div class="news-sec">
     <div class="am-tabs-set-wrap home-tabs-set" dir="rtl">
         <div class="container-fluid mw-1200">
@@ -76,9 +75,7 @@
             <div class="tab-pane fade active show" id="tab1">
                 <div class="row">
                     <div class="col-md-6 order-md-1 tab-img-col">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="{{ asset('uploads/video.mp4') }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                        </div>
+                        <img src="{{ asset('uploads/05.png') }}" alt="">
                     </div>
                     <div class="col-md-6 text-right">
                         <div class="p-4">
@@ -98,11 +95,10 @@
                     <div class="col-md-6 text-right">
                         <div class="p-4">
                             <h4>فروعنا</h4>
-                            <p>تفخر شركتنا بتواجد أكثر من 150 ً فرعا منتشرة في جمیع أنحاء المملكة العربیة السعودیة. نحن نقدم خدماتنا ومنتجاتنا الاستثنائیة في
-                                ًا وراء انتشارنا الواسع ونجاحنا المتواصل.
-                                ًا رئیسی
-                                مجالنا، والتي تعتبر سبب
-                            </p>
+                        <p>"نحن نفخر بتقديم خدماتنا عبر أكثر من 150 فرع متواجد في جميع أنحاء المملكة العربية السعودية. توزع هذه الفروع استراتيجيًا لضمان توفر وصول سهل وسريع إلى منتجاتنا وخدماتنا في جميع المدن والمناطق. هذا الانتشار الواسع يعكس التزامنا الراسخ بتلبية احتياجات عملائنا وضمان رضاهم.
+
+                        </p>
+
                             <a href="./organization_chart" class="btn btn-primary">اعرف المزيد عن فروعنا</a>
                         </div>
                     </div>
@@ -113,14 +109,16 @@
             <div class="tab-pane fade" id="tabuni">
                 <div class="row">
                     <div class="col-md-6 order-md-1 tab-img-col">
-                        <img src="https://test.lar.u4e.net/uploads/home.jpg" alt="">
+                        <img src="{{ asset('uploads/02.png') }}" alt="">
                     </div>
                     <div class="col-md-6 text-right">
                         <div class="p-4">
-                            <h4></h4>
-                            <p>صورة ، النشرة الإخبارية ، النشر بواسطة مكتب الاتصالات المؤسسية.</p>
-                            <a href="./newsletter" class="btn btn-primary">اكتشف واقرأ جميع إصدارات الصور</a>
-                        </div>
+                            <h4>منتجاتنا</h4>
+                            <p>
+                                طاقة تضمن الانطلاق
+                                تعد بطارية السيارة أحد العناصر الحيوية التي تمكنك من الانطلاق بأمان وثقة في رحلتك. في [شركه مشاريع الطاقه]، نحن نفهم أهمية وجود بطارية قوية وموثوقة تلبي احتياجات سيارتك. لذا، نقدم مجموعة ممتازة من بطاريات السيارات المصممة لتلبية أعلى معايير الأداء والموثوقية.                           </p>
+                                <a href="./organization_chart" class="btn btn-primary">اعرف المزيد عن منتجاتنا</a>
+                            </div>
                     </div>
                 </div>
 
@@ -128,12 +126,16 @@
             <div class="tab-pane fade" id="tabuni2">
                 <div class="row">
                     <div class="col-md-6 order-md-1 tab-img-col">
-                        <img src="https://test.lar.u4e.net/uploads/h2.jpg" alt="">
+                        <img src="{{ asset('uploads/07.png') }}" alt="">
                     </div>
                     <div class="col-md-6 text-right">
                         <div class="p-4">
                             <h4>  اهدافنا</h4>
-                            <p>شركة مشاريع الطاقة تقدم مجموعة واسعة من المنتجات عالية الجودة في مجال الطاقة. تتخصص الشركة في توفير بطاريات ذات جودة عالية وأداء ممتاز. تتميز بطاريات شركة مشاريع الطاقة بالموثوقية والكفاءة، مما يسمح للعملاء بتخزين واستخدام الطاقة بشكل فعال.</p>
+                            <p> توفير منتجات عالية الجودة: هدفنا الرئيسي هو تقديم بطاريات السيارات عالية الجودة والأداء. نسعى جاهدين لضمان أن عملائنا يحصلون دائمًا على المنتجات التي تلبي أعلى المعايير والمواصفات.
+                                رضا العملاء: نحن نسعى لتحقيق رضا العملاء الدائم. نعمل على تقديم خدمة عملاء استثنائية والاستماع إلى ملاحظات العملاء لضمان تلبية احتياجاتهم وتوقعاتهم.
+                                الاعتمادية والاستدامة: نسعى لضمان أن بطارياتنا تكون موثوقة واستدامة لفترة طويلة. نحن نعمل على تطوير تقنيات مبتكرة لتعزيز عمر البطاريات وأدائها في مختلف الظروف.
+
+                                </p>
                             <a href="http://www.example.org" target="_blank" class="btn btn-primary">تعرف على المزيد</a>
                         </div>
                     </div>
@@ -146,6 +148,32 @@
     </div>
     <div class="news-sec">
         <div class="container-fluid mw-1200">
+            <h2>كلمه رائيس مجلس الاداره</h2>
+     <div class="business-vertical leadership-cards">
+        <div class="container">
+            <div class="business" >
+                <div class="business-text-right">
+                    <div class="business-img-left">
+                        <div class="business-img-inner-left">
+                            <img decoding="async" src="{{ asset('uploads/Compny.jpg') }}"  >
+                        </div>
+                    </div>
+                    <div class="text-wrapper">
+                        <div class="business-title" style="--business-theme-color:#3f4954;">
+                             عبد المجيد شوباص
+                        </div>
+                        <div class="business-description">
+                            من أجل تحقيق أهدافنا، أجرينا تحليلًا شاملًا لمؤسستنا، وأجرينا دراسات استقصائية لقياس رضا العملاء، وأجرينا تحليلًا عميقًا لمؤشراتنا. قمنا بتقدير حالتنا المادية ونطاق نشاطاتنا المتنوعة في مؤسستنا المتعددة الفروع، وسلطنا الضوء على مجموعة من قضايا الاستدامة الحديثة.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="news-sec">
+        <div class="container-fluid mw-1200">
             <h2>آخر الأخبار</h2>
             <div class="new-slider owl-carousel owl-theme owl-loaded owl-drag" id="newsSlider">
                 <div class="owl-stage-outer">
@@ -155,7 +183,7 @@
                         <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
                             <div class="news-box">
                                 <a href="news.php?id=37" class="news-box-thumb">
-                                    <img src="{{ asset('uploads/new10.jpeg') }}" alt="معلومة شاملة عن بطارية السيارة">
+                                    <img src="{{ asset('uploads/01.png') }}" alt="معلومة شاملة عن بطارية السيارة">
                                     <span class="fa fa-link"></span>
                                 </a>
                                 <div class="news-box-info">
@@ -170,7 +198,7 @@
                         <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
                             <div class="news-box">
                                 <a href="news.php?id=37" class="news-box-thumb">
-                                    <img src="{{ asset('uploads/new7.jpeg') }}" alt="معلومة شاملة عن بطارية السيارة">
+                                    <img src="{{ asset('uploads/04.png') }}" alt="معلومة شاملة عن بطارية السيارة">
                                     <span class="fa fa-link"></span>
                                 </a>
                                 <div class="news-box-info">
@@ -185,7 +213,7 @@
                         <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
                             <div class="news-box">
                                 <a href="news.php?id=37" class="news-box-thumb">
-                                    <img src="{{ asset('uploads/new8.jpeg') }}" alt="معلومة شاملة عن بطارية السيارة">
+                                    <img src="{{ asset('uploads/08.png') }}" alt="معلومة شاملة عن بطارية السيارة">
                                     <span class="fa fa-link"></span>
                                 </a>
                                 <div class="news-box-info">
@@ -197,32 +225,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
-                            <div class="news-box">
-                                <a href="news.php?id=37" class="news-box-thumb">
-                                    <img src="{{ asset('uploads/new9.jpeg') }}" alt="معلومة شاملة عن بطارية السيارة">
-                                    <span class="fa fa-link"></span>
-                                </a>
-                                <div class="news-box-info">
-                                    <h5><a href="news.php?id=37">معلومة شاملة عن بطارية السيارة</a></h5>
-                                    <p>
-                                        {{ substr("تعتبر بطارية السيارة من أنواع البطاريات القابلة للشحن ومهمتها تشغيل المحرّك الكهربائي", 0, 200) }}
-                                    </p>
-                                    <small class="d-block text-muted"><i class="fa fa-calendar-alt"></i> 18-07-2023</small>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- More similar News Items (Repeat the structure for other news items) -->
+                      <!-- More similar News Items (Repeat the structure for other news items) -->
                     </div>
                 </div>
                 <div class="owl-nav disabled">
                     <button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button>
-                    <button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button>
+                    {{-- <button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button> --}}
                 </div>
 
             </div>
         </div>
     </div>
+
 
 
   </div>
