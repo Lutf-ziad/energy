@@ -6,7 +6,7 @@
                 <div class="combo-company-growth-wrapper">
                     <div class="container growth-plan-home">
                         <div class="growth-img">
-                            <img decoding="async" src={{ asset('uploads/silder3.jpg') }} >
+                            <img decoding="async" src={{ asset('uploads/slider-lutf.png') }} >
                             <div class="growth-text">
                              </div>
                         </div>
@@ -66,7 +66,7 @@
         <div class="container-fluid mw-1200">
             <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
                 <!--<li class="nav-item" role="presentation"><a class="nav-link active" data-toggle="tab" href="#tab1">ALL</a></li>-->
-                <li class="nav-item" role="presentation"><a class="nav-link active" data-toggle="tab" href="#tab1">عن الشركه</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active" data-toggle="tab" href="#tab1">عنا</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="tab" href="#tabuni">منتجاتنا</a>
                     <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="tab" href="#tabchangan">فروعنا</a></li>
                 </li><li class="nav-item" role="presentation"><a class="nav-link" data-toggle="tab" href="#tabuni2"> اهدافنا  </a></li>
