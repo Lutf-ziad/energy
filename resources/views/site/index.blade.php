@@ -6,7 +6,7 @@
                 <div class="combo-company-growth-wrapper">
                     <div class="container growth-plan-home">
                         <div class="growth-img">
-                            <img decoding="async" src={{ asset('uploads/slider-lutf.png') }} >
+                            <img decoding="async" src={{ asset('uploads/d029sdgsfgh.png') }} >
                             <div class="growth-text">
                              </div>
                         </div>
