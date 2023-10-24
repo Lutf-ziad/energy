@@ -7,7 +7,10 @@
     <title>شركه مشاريع الطاقه للبطاريات</title>
     <meta name="title" content="">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" id="bootstrap-css" href="{{ asset('themes/petromin/assets/build/css/bootstrap.min.css?ver=1650579102') }}" media="all">
+         <link type="text/css" rel="stylesheet" href="{{ asset('uploads/main.css') }}">
+       {{-- <link type="text/css" rel="stylesheet" href="https://mntsher.com/public/css/rtl.css"> --}}
+       <link type="text/css" rel="stylesheet" href="{{ asset('uploads/uploads/bootstrap.rtl.min.css') }}">
+     <link rel="stylesheet" id="bootstrap-css" href="{{ asset('themes/petromin/assets/build/css/bootstrap.min.css?ver=1650579102') }}" media="all">
     <link rel="stylesheet" id="swiper-bundle-min-css" href="{{ asset('themes/petromin/assets/build/css/swiper-bundle.min.css?ver=1650579102') }}" media="all">
     <link rel="stylesheet" id="magnific-popup-min-css" href="{{ asset('themes/petromin/assets/build/css/magnific-popup.min.css?ver=1650579102') }}" media="all">
     <link rel="stylesheet" id="main-css" href="{{ asset('themes/petromin/assets/build/css/main_ar.css?ver=1695011854') }}" media="all">

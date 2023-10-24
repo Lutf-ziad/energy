@@ -46,7 +46,12 @@ Route::get('/contact', function () {
 Route::get('/complain', function () {
     return view('site.complain');
 });
-
+Route::get('/detilesNew', function () {
+    return view('site.detiles.detilesNew');
+});
+Route::get('/New', function () {
+    return view('site.detiles.New');
+});
  Route::view('/login', 'login')->middleware('guest:admin');
 
 Route::post('/login', [LoginController::class, 'login'])->name('login')->middleware('guest:admin');
