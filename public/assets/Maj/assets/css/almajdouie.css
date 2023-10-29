@@ -6261,8 +6261,7 @@
  .img-fluid,
  .img-thumbnail {
      max-width: 100%;
-     height: auto
- }
+     height: auto}
 
  .img-thumbnail {
      padding: .25rem;
@@ -16477,7 +16476,9 @@
  }
 
  img {
-     max-width: 100%
+     max-width: 100%;
+     box-shadow: 0px 10px 12px #3f4954;
+     border-radius: 10px;
  }
 
  img.embed-responsive-item {
