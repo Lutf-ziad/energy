@@ -16477,8 +16477,8 @@
 
  img {
      max-width: 100%;
-     box-shadow: 0px 10px 12px #3f4954;
-     border-radius: 10px;
+     box-shadow:13px #3f4954;
+     border-radius: 15px;
  }
 
  img.embed-responsive-item {
