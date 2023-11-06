@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layout.main')
 @section('content')
     <article id="post-55" class="post-55 page type-page status-publish hentry">
         <div class="entry-content">
