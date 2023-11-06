@@ -1,7 +1,4 @@
-@extends('layout.main')
-@section('content')
-
-
+ @section('content')
    <section class="combo-company-growth video-banner">
     <div class="combo-company-growth-wrapper">
         <div class="container growth-plan-home">

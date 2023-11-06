@@ -1,7 +1,5 @@
-@extends('layout.main')
+@extends('layouts.main')
 @section('content')
-
-
     <article id="post-55" class="post-55 page type-page status-publish hentry">
         <div class="entry-content">
             <section class="combo-company-growth video-banner">
