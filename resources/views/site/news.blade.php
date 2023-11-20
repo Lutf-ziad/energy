@@ -9,45 +9,31 @@
             <div class="am-content-section">
                 <a href="./news/32/" class="media-center-featured-news">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <img src="{{ asset('uploads/h1.jpg') }}" class="embed-responsive-item" alt="">
+                        <img src="{{ asset('images/'. $News->picture ) }}" class="embed-responsive-item" alt="">
                     </div>
-                    <h2 class="text-right"><span>منتج جديد يغزو الأسواق من شركة مشاريع الطاقة</span></h2>
+                    <h2 class="text-right"><span>{{$News->name}}span></h2>
                 </a>
                 <div class="media-center-list-wrap">
+                    @foreach($New as $new)
                     <div class="news-content">
                         <div class="media-center-box">
                             <div class="row no-gutters">
                                 <div class="col-sm-4">
                                     <div class="media-center-box-thumb">
-                                        <img src="{{ asset('uploads/h1.jpg') }}" alt="">
+                                        <img src="{{ asset('images/'. $new->picture ) }}" alt="">
                                     </div>
                                 </div>
                                 <div class="col-sm-8 align-self-center text-right">
                                     <div class="media-center-box-content">
-                                        <h4><a href="news/32/">منتج جديد يغزو الأسواق من شركة مشاريع الطاقة</a></h4>
-                                        <p>تبيع توتال إنرجي لعملائها الكهرباء الخضراء المنتجة مباشرة في مواقعهم، من خلال اتفاقيات شراء للطاقة طويلة الأجل، كما تقوم بتطوير وتمويل وبناء وتشغيل منشآت الطاقة الشمسية على الأسطح ومواقف السيارات، بالإضافة إلى الأراضي الصناعية المتاحة.</p>
-                                        <div><a href="news/32/" class="btn btn-primary" style="float: right;">قراءة المزيد</a> <span style="font-size: 80%;float: left; margin: 5px;">نشر في 06-03-2022</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="media-center-box">
-                            <div class="row no-gutters">
-                                <div class="col-sm-4">
-                                    <div class="media-center-box-thumb">
-                                        <img src="{{ asset('uploads/new9.jpeg') }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-sm-8 align-self-center text-right">
-                                    <div class ="media-center-box-content">
-                                        <h4><a href="news/30/">ما دور البطارية في مجال الطاقة الشمسية</a></h4>
-                                        <p>للبطارية دور هام في تخزين الطاقة التي يتم إنتاجها من الألواح الشمسية أو باستخدام شاحن لشحن البطارية من شبكة الكهرباء.</p>
-                                        <div><a href="news/29/" class="btn btn-primary" style="float: right;">قراءة المزيد</a> <span style="font-size: 80%;float: left; margin: 5px;">نشر في 20-01-2022</span></div>
+                                        <h4><a href="{{ route('new-detail', $new->id) }}">{{$new->names}}</a></h4>
+                                        <p>{{ $new->descrption }}</p>
+                                        <div><a href="{{ route('new-detail', $new->id) }}" class="btn btn-primary" style="float: right;">قراءة المزيد</a> <span style="font-size: 80%;float: left; margin: 5px;">نشر في {{ $new->created_at }}</span></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @endforeach
                 </div>
                 <div class="news-pages">
                     <ul class="pagination mt-4 bootpag">

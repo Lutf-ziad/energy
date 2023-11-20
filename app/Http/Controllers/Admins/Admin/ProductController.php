@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admins\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Livewire\Admins\Admin\ProductIndex;
+use App\Http\Requests\Admins\Admin\StoreBlogRequest;
 use App\Http\Requests\Admins\Admin\StoreProductRequest;
 use App\Http\Requests\Admins\Admin\UpdateProductRequest;
 use App\Models\Category;
@@ -18,23 +19,27 @@ class ProductController extends Controller
     {
         return App::call(ProductIndex::class);
     }
-
     public function create()
     {
         $Category = Category::select('id', 'name')->get();
-
         return view('admins.admin.product.create', compact('Category'));
     }
 
     public function store(StoreProductRequest $request)
     {
-
           try {
-            $data = array_merge($request->validated());
-            if (Product::create($data)) {
-                return successMessage('Create product Successfuly');
+            if ($request->has('image')) {
+                $picture = setStorage('Blog', $request->image);
+                $data = array_merge($request->validated(), [
+                    'picture' => $picture,
+                ]);
             } else {
-                return errorMessage('Create product has not be completed');
+                $data = $request->validated();
+            }
+             if (Product::create($data)) {
+                return successMessage('تم الاضافه');
+            } else {
+                return errorMessage('لم يتم الاضافه');
             }
         } catch (Exception $e) {
             return handleErrors($e);

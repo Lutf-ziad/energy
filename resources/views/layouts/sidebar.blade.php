@@ -1,4 +1,4 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="main-sidebar sidebar-dark-primary elevation-4" dir="rtl"  style="text-align: right;font-size:20px">
     <a href="{{url(auth('admin')->user()->name)}}/dashboard" class="brand-link">
         <img src="" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
             style="opacity: .8">

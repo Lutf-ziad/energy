@@ -11,7 +11,7 @@ class BtnAdd extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public string $route, public string $label = 'Add New')
+    public function __construct(public string $route, public string $label = 'اضافه جديد')
     {
         //
     }

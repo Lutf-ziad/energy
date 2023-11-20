@@ -1,7 +1,13 @@
 <?php
 
+use App\Http\Controllers\Admins\Admin\BlogController;
+use App\Http\Controllers\Admins\Admin\ProductController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\site\NewsController;
+use App\Http\Controllers\site\OffersController;
+use App\Http\Controllers\site\PrizeController;
+use App\Http\Controllers\site\TemeController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -22,18 +28,12 @@ Route::get('/changan', function () {
 Route::get('/new_details', function () {
     return view('site.new_details');
 });
-Route::get('/lead', function () {
-    return view('site.lead');
-});
-Route::get('/news', function () {
-    return view('site.news');
-});
-Route::get('/offer-detail', function () {
-    return view('site.offer-detail');
-});
-Route::get('/offers', function () {
-    return view('site.offers');
-});
+Route::get('/prize', [PrizeController::class, 'index'])->name('prize')->withTrashed();
+Route::get('/news', [NewsController::class, 'index'])->name('new')->withTrashed();
+Route::get('/new-detail/{id}', [NewsController::class, 'ditels'])->name('new-detail')->withTrashed();
+Route::get('/offers', [OffersController::class, 'index'])->name('product')->withTrashed();
+Route::get('/teme', [TemeController::class, 'index'])->name('teme')->withTrashed();
+Route::get('/offer-detail/{id}', [OffersController::class, 'ditels'])->name('offer-detail')->withTrashed();
 Route::get('/Sustainability', function () {
     return view('site.Sustainability');
 });
@@ -43,11 +43,18 @@ Route::get('/vehicle', function () {
 Route::get('/contact', function () {
     return view('site.contact');
 });
-Route::get('/complain', function () {
-    return view('site.complain');
-});
+
 Route::get('/detilesNew', function () {
     return view('site.detiles.detilesNew');
+});
+Route::get('/detilesGoal', function () {
+    return view('site.detiles.detilesGoal');
+});
+Route::get('/detilesbranch', function () {
+    return view('site.detiles.detilesbranch');
+});
+Route::get('/detilesproudect', function () {
+    return view('site.detiles.detilesproudect');
 });
 Route::get('/New', function () {
     return view('site.detiles.New');

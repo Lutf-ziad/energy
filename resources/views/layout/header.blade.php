@@ -38,7 +38,7 @@
                                 <a href="{{ url('news') }}" title="اخبارنا" class="menu-item menu-item-type-post_type menu-item-object-page nav-link" target="">اخبارنا</a>
                             </li>
                             <li class="li-wrapper">
-                                <a href="{{ url('lead') }}" title="الإنجازات والجوائز" class="menu-item menu-item-type-post_type menu-item-object-page nav-link" target="">الإنجازات والجوائز</a>
+                                <a href="{{ route('prize')}}" title="الإنجازات والجوائز" class="menu-item menu-item-type-post_type menu-item-object-page nav-link" target="">الإنجازات والجوائز</a>
                             </li>
                             {{-- <li class="li-wrapper">
                                 <a href="{{ url('complain') }}" title="فريق القادة" class="menu-item menu-item-type-post_type menu-item-object-page nav-link" target="">فريق القادة</a>
@@ -49,7 +49,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">الفروع</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="{{ url('complain') }}">فریق الإدارة</a>
+                                    <a class="dropdown-item" href="{{ route('teme')}}">فریق الإدارة</a>
                                     <a class="dropdown-item" href="{{ url('Sustainability') }}">المبادرات</a>
                                 </div>
                             </li>

@@ -12,7 +12,7 @@ class WelcomeController extends Controller
 
     public function index()
     {
-        $newsArticles = Blog::orderBy('created_at', 'desc')->get();
+        $newsArticles = Blog::orderBy('created_at', 'desc')->take(3)->get();
         return view('site.index', ['newsArticles' => $newsArticles]);
     }
     public function show($id)

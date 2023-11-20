@@ -1,5 +1,5 @@
-@section('title', 'Categories List')
-@section('page', 'Categories List')
+@section('title', 'انواع البطاريات   ')
+@section('page', 'انواع البطاريات   ')
 <div>
     {{-- <x-view.alerts /> --}}
     <div class="card">
@@ -13,9 +13,9 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Name</th>
-                            <th>Active</th>
-                             <th>Actions</th>
+                            <th>الاسم </th>
+                            <th>فعّال</th>
+                             <th>أعمال</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -40,7 +40,7 @@
                             </tr>
                         @empty
                             <tr class="text-center">
-                                <td colspan="5"> No Data</td>
+                                <td colspan="5"> ليس هناك بيانات</td>
                             </tr>
                         @endforelse
                     </tbody>
@@ -59,9 +59,9 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="formModalLabel">
-                        {{ $mode == 'edit' ? 'Edit Category' : ($mode == 'show' ? 'Show Category' : 'Create Category') }}
+                        {{ $mode == 'edit' ? 'تعديل نوع بطارية' : ($mode == 'show' ? 'Show Category' : 'انشائ نوع بطارية') }}
                     </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button"  onclick="history.back();" class="close" data-dismiss="modal" aria-label="اغلاق">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -69,33 +69,33 @@
                     @if ($mode == 'show')
                         <table class="table table-bordered">
                             <tr>
-                                <th>Name</th>
+                                <th>الاسم</th>
                                 <td>{{ $name }}</td>
                             </tr>
                             <tr>
-                                <th>Active</th>
+                                <th>فعّال</th>
                                 <td> {{ getStatus($active) }}</td>
                             </tr>
                             <tr>
-                                <th>Created At</th>
+                                <th>تم الانشاء</th>
                                 <td> {{ $created_at }} | {{$created_at->diffForHumans()}}</td>
                             </tr>
                             <tr>
-                                <th>Updated At</th>
+                                <th>تم التعديل  </th>
                                 <td> {{ $updated_at }} | {{$updated_at!=null?$updated_at->diffForHumans():''}}</td>
                             </tr>
                         </table>
                     @else
                         <form wire:submit.prevent="store()">
-                            <x-livewire.inputs.text-input name="name" label="Name" />
-                            <x-livewire.inputs.checkbox-input name="active" label="Active" />
+                            <x-livewire.inputs.text-input name="name" label="الاسم" />
+                            <x-livewire.inputs.checkbox-input name="active" label="التفاعل" />
                         </form>
                     @endif
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button"  onclick="history.back();" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
                     @if ($mode == 'create' || $mode == 'edit')
-                        <button type="submit" class="btn btn-primary" wire:click.prevent="store()">Svae</button>
+                        <button type="submit" class="btn btn-primary" wire:click.prevent="store()">حفظ</button>
                     @endif
                 </div>
             </div>

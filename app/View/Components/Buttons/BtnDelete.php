@@ -8,7 +8,7 @@ use Illuminate\View\Component;
 
 class BtnDelete extends Component
 {
-    public function __construct(public string $route, public object $id, public string $title = 'Confirm Delete')
+    public function __construct(public string $route, public object $id, public string $title = 'تاكيد الحذف', public string $class = '')
     {
     }
 

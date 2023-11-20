@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
@@ -21,14 +22,7 @@ class LoginController extends Controller
         ]);
         //   dd($request->all());
         if (Auth::guard('admin')->attempt(['name' => $request->name, 'password' => $request->password], $request->remember)) {
-
-            // if (auth()->user()->active == 0) {
-            //     Auth::guard()->logout();
-            //     Session::flush();
-            //     return back()->with('error', 'This account has been suspended');
-            // } else {
-                return redirect()->intended(route('admin.dashboard'));
-            //}
+            return redirect()->intended(route('admin.dashboard'));
         }
         return back()->with('error', 'Invalid Login');
     }

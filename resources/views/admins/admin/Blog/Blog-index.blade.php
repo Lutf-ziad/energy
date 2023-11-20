@@ -13,11 +13,11 @@
                 <thead class="">
                     <tr>
                         <th>#</th>
-                        <th>Name</th>
-                        <th>desc Name</th>
-                        <th>Image</th>
-                        <th>Active</th>
-                        <th>Actions</th>
+                        <th>الاسم</th>
+                        <th>التفاصيل</th>
+                        <th>صوره</th>
+                        <th>فعال</th>
+                        <th>الانشطه التفاعليه</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -27,11 +27,11 @@
                             data-placement="top"
                             title="@if ($Blog->deleted_at) {{ __('This Record is Trashed') }} @endif">
                             <td>{{ $loop->iteration }}</td>
-                            <td>{{ substr( $Blog->name , 0, 20)}}</td>
-                            <td>{{ substr($Blog->descrption , 0, 30)}}</td>
+                            <td>{{ substr( $Blog->name , 0, 100)}}</td>
+                            <td>{{ substr($Blog->descrption , 0, 100)}}</td>
                             <td>
                                 <div class="col-3 p-md-0">
-                                    <img class="img-circle img-thumbnail float-right" width="50" height="50" src={{asset('uploads/blog/' . $Blog->picture)}}                                 </div>
+                                    <img class="img-circle img-thumbnail float-right" width="150" height="200" src={{asset('images/'.$Blog->picture)}}                                 </div>
                             </td>
 
                             <td>{{ getStatus($Blog->active) }}</td>
@@ -46,14 +46,14 @@
                                     <x-buttons.btn-restore route="Blogs.restore" :id="$Blog" />
                                 @endif
                                 @php
-                                    $actions = [['route' => 'Blogs.change-active', 'label' => $Blog->active ? 'InActive' : 'Active', 'id' => $Blog]];
+                                    $actions = [['route' => 'Blogs.change-active', 'label' => $Blog->active ? 'غير فعال' : 'فعال', 'id' => $Blog]];
                                 @endphp
                                 <x-buttons.btn-more :actions="$actions" />
                             </td>
                         </tr>
                     @empty
                         <tr class="text-center">
-                            <td colspan="11">No Data</td>
+                            <td colspan="11">ليس هناك بيانات</td>
                         </tr>
                     @endforelse
                 </tbody>

@@ -53,7 +53,7 @@ class ProductIndex extends Component
         }
         $products = FilterClass::result($query, $this->records, $this->orderBy, $this->sortAs, $this->key, $this->byDate, $this->date1, $this->date2);
 
-        return view('admins.admin.product.product-index', compact('products', 'Catgrys'))->extends('admins.admin.app');
+        return view('admins.admin.product.product-index', compact('products', 'Catgrys'))->extends('layouts.admin');
     }
 
     public function resetDefault()

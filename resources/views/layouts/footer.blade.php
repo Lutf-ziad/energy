@@ -1,12 +1,6 @@
 <button class="btn btn-dark rounded-circle px-3 py-2" id="go-to-top" title="Go to top"  style="position: fixed;bottom: 70px;right: 20px;display:none;"><i class="fa fa-long-arrow-alt-up" ></i></button>
 </div>
-<footer class="main-footer">
-    <strong>Copyright &copy; {{ date('Y') }} <a href="https://adminlte.io">LEZER information technology company </a></strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-        <b>Version</b> 1.0.0
-    </div>
-</footer>
+
 
 </div>
 <!-- ./wrapper -->

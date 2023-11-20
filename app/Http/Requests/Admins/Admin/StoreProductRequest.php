@@ -25,6 +25,7 @@ class StoreProductRequest extends FormRequest
             'categorie_id' => ['required', 'integer', 'exists:categories,id'],
             'name' => ['required', 'string', 'max:255'],
             'desc' => ['nullable', 'string'],
+            'picture' => ['nullable', 'image', 'mimes:'.config('app.ALLOED_IMAGE_EXTENSIONS'), 'max:'.config('app.ALLOED_IMAGE_SIZE')],
             'price' => ['required', 'numeric'],
             'active' => ['required', 'integer', 'in:0,1'],
         ];

@@ -11,7 +11,7 @@ class BtnForceDelete extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public string $route, public object $id, public string $title = 'Confirm Force Delete')
+    public function __construct(public string $route, public object $id, public string $title = 'تاكيد الحذف', public string $class = '')
     {
         //
     }

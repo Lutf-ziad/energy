@@ -8,7 +8,7 @@
                         <div class="hm-slider-wrap">
                             <div class="hm-slider owl-carousel owl-theme" id="hmSlider">
                                 <div class="hm-slide">
-                                    <img src="{{ asset('uploads/blog/slider.jpeg') }}" alt="hvh" class="hm-slide-banner">
+                                    <img src="{{ asset('uploads/blog/slider.jpeg') }}" alt="" class="hm-slide-banner">
                                     <div class="hm-slide-content">
                                         <p>مرحبا بكم شركه مشاريع الطاقه</p>
                                     </div>
@@ -32,16 +32,16 @@
             </section>
         </div>
     </div>
-</section>
+  </section>
 
-<div class="page-sec welcome-sec">
+ <div class="page-sec welcome-sec">
     <div class="container-fluid mw-1200">
         <h1 class="sec-title">مرحبا بكم في شركة مشاريع الطاقة</h1>
         <div class="about-us-desc">
             <p>شركة مشاريع الطاقة تقدم مجموعة واسعة من المنتجات عالية الجودة في مجال الطاقة. تتخصص الشركة في توفير بطاريات ذات جودة عالية وأداء ممتاز. بطاريات شركة مشاريع الطاقة تتميز بالموثوقية والكفاءة، مما يسمح للعملاء بتخزين واستخدام الطاقة بشكل فعال. تتوفر مجموعة متنوعة من بطاريات الطاقة، بما في ذلك بطاريات الليثيوم والرصاص الحمضية والنيكل-كادميوم، وتتواجد بطاريات بقدرات مختلفة لتلبية احتياجات مختلف العملاء.</p>
         </div>
     </div>
-</div>
+ </div>
 
 <div class="news-sec">
     <div class="am-tabs-set-wrap home-tabs-set" dir="rtl">

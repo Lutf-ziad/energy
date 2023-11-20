@@ -1,4 +1,4 @@
-<div class="mb-1 d-inline-block"  data-toggle="tooltip" title="More Actions">
+<div class="mb-1 d-inline-block"  data-toggle="tooltip" title=" المزيد من الخيرات  ">
     <div class="dropdown d-inline-block">
         <button class="btn btn-sm btn-outline-dark dropdown-toggle" style="padding-right: 11px;" type="button" data-toggle="dropdown" aria-expanded="false">
         </button>

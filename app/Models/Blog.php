@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Blog extends Model
 {
     use HasFactory,SoftDeletes;
-    protected $guarded = ['id', 'created_at', 'updated_at'];
+    protected $guarded = [];
 
     public function scopeActive($query)
     {

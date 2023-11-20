@@ -54,7 +54,7 @@ class BlogIndex extends Component
         }
         $Blogs = FilterClass::result($query, $this->records, $this->orderBy, $this->sortAs, $this->key, $this->byDate, $this->date1, $this->date2);
 
-        return view('admins.admin.Blog.Blog-index', compact('Blogs'))->extends('admins.admin.app');
+        return view('admins.admin.Blog.Blog-index', compact('Blogs'))->extends('layouts.admin');
     }
 
     public function resetDefault()

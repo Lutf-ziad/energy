@@ -1,83 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.login')
+@section('title','الدخول')
+@section('content')
+    <section class="flexbox-container">
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <div class="col-md-4 col-10 box-shadow-2 p-0">
+                <div class="card border-grey border-lighten-3 m-0">
+                    <div class="card-header border-0">
+                        <div class="card-title text-center">
+                            <div class="p-1">
+                                <img src="{{asset('assets/front/images/logo.png')}}" alt="LOGO"/>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ __('Login Page') }}</title>
-    <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet"
-     href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome-free/css/all.min.css') }}">
-    <!-- icheck bootstrap -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="{{ asset('assets/dist/css/adminlte.min.css') }}">
-</head>
+                            </div>
+                        </div>
+                        <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-2">
+                            <span>الدخول للوحة التحكم </span>
+                        </h6>
+                    </div>
+                    @include('includes.alerts.errors')
+                    @include('includes.alerts.success')
+                    <div class="card-content">
+                        <div class="card-body">
+                            <form class="form-horizontal form-simple" action="{{route('login')}}" method="post"
+                                  novalidate>
+                                @csrf
+                                <fieldset class="form-group position-relative has-icon-left mb-0">
+                                    <input type="text" name="name" class="form-control form-control-lg input-lg"
+                                           value="{{old('name')}}" id="name" placeholder="أدخل اسم المستخدم" value="admin">
+                                    <div class="form-control-position">
+                                        <i class="ft-user"></i>
+                                    </div>
+                                    @error('name')
+                                    <span class="text-danger">{{$message}}</span>
+                                    @enderror
 
-<body class="hold-transition login-page">
-    <div class="login-box">
-        <div class="login-logo">
-            <img class="animation__shake"   alt="AdminLTELogo"
-                height="100" width="100">
-        </div>
-        <div class="card card-outline card-primary">
-            <div class="card-header text-center">
-                <b class="h1">{{ __('Login Page') }}</b>
+                                </fieldset>
+                                <fieldset class="form-group position-relative has-icon-left">
+                                    <input type="password" name="password" class="form-control form-control-lg input-lg"
+                                           id="user-password"
+                                           placeholder="أدخل كلمة المرور" value="admin">
+                                    <div class="form-control-position">
+                                        <i class="la la-key"></i>
+                                    </div>
+                                    @error('password')
+                                    <span class="text-danger">{{$message}}</span>
+                                    @enderror
+                                </fieldset>
+                                <div class="form-group row">
+                                    <div class="col-md-6 col-12 text-center text-md-left">
+                                        <fieldset>
+                                            <input type="checkbox" name="remember_me" id="remember-me"
+                                                   class="chk-remember">
+                                            <label for="remember-me">تذكر دخولي</label>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-info btn-lg btn-block"><i class="ft-unlock"></i>
+                                    دخول
+                                </button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card-body login-card-body">
-                <ul>
-                  @if (session()->has("error"))
-                  <li class="text-danger text-bold">{{ session("error") }}</li>
-                  @endif
-                    @if ($errors->any())
-                        @foreach ($errors->all() as $error)
-                            <li class="text-danger text-bold">{{ $error }}</li>
-                        @endforeach
-                    @endif
-                </ul>
-                <form action="{{ route('login') }}" method="post">
-                    @csrf
-                    <div class="input-group mb-3">
-                        <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Name" required value="admin">
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-user"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="input-group mb-3">
-                        @csrf
-                        <input type="password" name="password" class="form-control  @error('password') is-invalid @enderror" placeholder="Password" required value="admin">
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <div class="icheck-primary">
-                                <input type="checkbox" id="remember" name="remember">
-                                <label for="remember">
-                                    {{ __('Remember Me') }}
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block">{{ __('Sign In') }}</button>
-                        </div>
-
-                    </div>
-                </form>
-
-            </div>
-
         </div>
-    </div>
-
-</body>
-
-</html>
+    </section>
+@endsection

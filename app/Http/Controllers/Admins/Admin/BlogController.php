@@ -32,21 +32,23 @@ class BlogController extends Controller
 
     public function store(StoreBlogRequest $request)
     {
+        dd($request->all());
         try {
             if ($request->has('image')) {
-                $picture = setStorage('blog', $request->image);
+                $picture = setStorage('Blog', $request->image);
                 $data = array_merge($request->validated(), [
                     'picture' => $picture,
                 ]);
             } else {
                 $data = $request->validated();
             }
-            if (Blog::create($data)) {
-                return successMessage('Create Blog Successfuly');
-            } else {
-                deleteStorage("Car/$picture");
 
-                return errorMessage('Create Blog has not be completed');
+            if (Blog::create($data)) {
+                return successMessage('تم  اضافه   بنجاح');
+            } else {
+                deleteStorage("Blog/$picture");
+
+                return errorMessage('لم يتم الاضافه');
             }
         } catch (Exception $e) {
             return handleErrors($e);
@@ -83,7 +85,7 @@ class BlogController extends Controller
             } else {
                 // deleteStorage("Blog/$picture");
 
-                return errorMessage('Update Blog has not be completed');
+                return errorMessage('تم التعديل');
             }
 
         } catch (Exception $e) {

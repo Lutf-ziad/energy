@@ -12,12 +12,12 @@
                     <thead class="">
                         <tr>
                             <th>#</th>
-                            <th>Name</th>
-                            <th>email</th>
-                            <th>phone</th>
-                            <th>Describe</th>
-                            <th>Active</th>
-                            <th>Actions</th>
+                            <th>الاسم</th>
+                            <th>الايميل</th>
+                            <th>الرقم</th>
+                            <th>التفاصيل</th>
+                            <th>فعال</th>
+                            <th>الانشطه</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -49,7 +49,7 @@
                             </tr>
                         @empty
                             <tr class="text-center">
-                                <td colspan="6">No Data</td>
+                                <td colspan="6">ليس هناك بيانات</td>
                             </tr>
                         @endforelse
                     </tbody>

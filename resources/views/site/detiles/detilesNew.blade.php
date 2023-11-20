@@ -5,7 +5,7 @@
        <div class="highlightednews-section">
           <div class="news-imgs">
              <div class="news1">
-                <img src="{{ asset('uploads/05.png') }}" alt="">
+                <img src="{{ asset('uploads/05.png') }}" alt="" style="border-radius:15px ;padding-top: 10%">
              </div>
           </div>
        </div>

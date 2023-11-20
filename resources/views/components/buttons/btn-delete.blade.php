@@ -15,15 +15,15 @@
                 </button>
             </div>
             <div class="modal-body">
-                <h5 class="card-title"> Are you sure want to delete?</h5>
+                <h5 class="card-title"> هل أنت متأكد أنك تريد الحذف؟</h5>
                 {{ $slot }}
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">اغلاق</button>
                 <form action="{{ route($route, $id) }}" method="post">
                     @csrf
                     @method('delete')
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <button type="submit" class="btn btn-danger">حذف</button>
                 </form>
             </div>
         </div>

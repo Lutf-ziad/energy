@@ -11,7 +11,7 @@ class BtnBack extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public string $route, public string $label = 'Back To List', public string $class = '')
+    public function __construct(public string $route, public string $label = 'العودة للخلف', public string $class = '')
     {
         //
     }

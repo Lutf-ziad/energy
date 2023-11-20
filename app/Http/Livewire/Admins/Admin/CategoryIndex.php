@@ -58,7 +58,7 @@ class CategoryIndex extends Component
         $query = Category::query();
         $categories = FilterClass::result($query, $this->records, $this->orderBy, $this->sortAs, $this->key, $this->byDate, $this->date1, $this->date2);
 
-        return view('livewire.admins.admin.category-index', compact('categories'))->extends('admins.admin.app');
+        return view('livewire.admins.admin.category-index', compact('categories'))->extends('layouts.admin');
     }
 
     public function resetDefault()

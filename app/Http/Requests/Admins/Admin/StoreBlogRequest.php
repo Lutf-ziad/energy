@@ -26,7 +26,7 @@ class StoreBlogRequest extends FormRequest
         return [
             'name'    => ['required', 'min:3', 'max:255'],
             'descrption'    => ['required','max:1000'],
-            'image' => ['nullable', 'image', 'mimes:'.config('app.ALLOED_IMAGE_EXTENSIONS'), 'max:'.config('app.ALLOED_IMAGE_SIZE')],
+            'picture' => ['nullable', 'image', 'mimes:'.config('app.ALLOED_IMAGE_EXTENSIONS'), 'max:'.config('app.ALLOED_IMAGE_SIZE')],
             'active'  => ['required', 'integer', 'in:0,1'],
         ];
     }

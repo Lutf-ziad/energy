@@ -33,10 +33,10 @@ class ContactusController extends Controller
 
                 $data = $request->validated();
             if (Contacut::create($data)) {
-                return successMessage('Create Contactu Successfuly');
+                return successMessage('تم الاضافه');
             } else {
 
-                return errorMessage('Create Contactu has not be completed');
+                return errorMessage('لم يتم الاضافه');
             }
         } catch (Exception $e) {
             return handleErrors($e);

@@ -34,11 +34,11 @@ class ClientController extends Controller
                 $data = $request->validated();
             }
             if (Admin::create($data)) {
-                return successMessage('Create Client Successfuly');
+                return successMessage('تم الاضافه ');
             } else {
                 deleteStorage("Admin/$picture");
 
-                return errorMessage('Create client has not be completed');
+                return errorMessage('لم يتم الاضافه');
             }
         } catch (Exception $e) {
             return handleErrors($e);

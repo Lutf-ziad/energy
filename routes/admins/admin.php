@@ -1,13 +1,15 @@
 <?php
 
-use App\Http\Controllers\Admins\Admin\ContactuController as AdminContactuController;
+use App\Http\Controllers\Admins\Admin\Achievements_prizesController;
 use App\Http\Controllers\Admins\Admin\ClientController;
 use App\Http\Controllers\Admins\Admin\ProductController;
 use App\Http\Controllers\Admins\Admin\PromotionController;
 use App\Http\Controllers\Admins\Admin\BlogController;
 use App\Http\Controllers\Admins\Admin\ContactusController;
+use App\Http\Controllers\Admins\Admin\Management_team;
 use App\Http\Controllers\ContactuController;
 use App\Http\Controllers\ImageController;
+use App\Http\Controllers\site\NewsController;
 use App\Http\Livewire\Admins\Admin\AdminIndex;
 use App\Http\Livewire\Admins\Admin\CategoryIndex;
 use App\Http\Livewire\Admins\Admin\PackageIndex;
@@ -20,7 +22,6 @@ Route::middleware(['AdminAuth'])->group(function () {
     // start route categories
     Route::get('categories', CategoryIndex::class)->name('categories');
     Route::get('Admin', AdminIndex::class)->name('Admin');
-
     // end route categories
     Route::controller(ImageController::class)->group(function(){
         Route::get('image-upload/{id}','show')->name('image.index');
@@ -44,7 +45,16 @@ Route::middleware(['AdminAuth'])->group(function () {
     Route::post('products/{product}/restore', [ProductController::class, 'restore'])->name('products.restore')->withTrashed();
     Route::resource('products', ProductController::class)->withTrashed();
     // end route products
+    Route::get('prizes/{prizes}/change-active', [Achievements_prizesController::class, 'changeActive'])->name('prizes.change-active')->withTrashed();
+    Route::post('prizes/{prizes}/force-delete', [Achievements_prizesController::class, 'forceDelete'])->name('prizes.force-delete')->withTrashed();
+    Route::post('prizes/{prizes}restore', [Achievements_prizesController::class, 'restore'])->name('prizes.restore')->withTrashed();
+    Route::resource('prizes', Achievements_prizesController::class)->withTrashed();
     // start artisan route
+      Route::get('team/{team}/change-active', [Management_team::class, 'changeActive'])->name('team.change-active')->withTrashed();
+     Route::post('team/{team}/force-delete', [Management_team::class, 'forceDelete'])->name('team.force-delete')->withTrashed();
+     Route::post('team/{team}restore', [Management_team::class, 'restore'])->name('team.restore')->withTrashed();
+     Route::resource('team', Management_team::class)->withTrashed();
+     ///////////////
     Route::group(['prefix' => 'artisan'], function () {
         Route::get('migrate_fresh', function () {
             Artisan::call('migrate:fresh');

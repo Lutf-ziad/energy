@@ -1,7 +1,7 @@
 @include('layouts.header')
 @include('layouts.sidebar')
 @include('layouts.navbar')
-<div class="content-wrapper">
+<div class="content-wrapper"  >
     <div class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <section class="content">
+    <section class="content" >
         <div class="container-fluid">
             {{-- <x-view.alerts /> --}}
             @yield('content')
