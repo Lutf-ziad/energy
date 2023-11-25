@@ -2,7 +2,7 @@
     <a href="{{url(auth('admin')->user()->name)}}/dashboard" class="brand-link">
         <img src="" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
             style="opacity: .8">
-        <span class="brand-text font-weight-light">Blog App</span>
+        <span class="brand-text font-weight-light">شركه مشاريع الطاقه</span>
     </a>
     <div class="sidebar">
         <div class="form-inline my-2 ">

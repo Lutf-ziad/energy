@@ -7,11 +7,19 @@
                 <div class="card border-grey border-lighten-3 m-0">
                     <div class="card-header border-0">
                         <div class="card-title text-center">
-                            <div class="p-1">
-                                <img src="{{asset('assets/front/images/logo.png')}}" alt="LOGO"/>
-
+                            <div class="side-menu-header">
+                                <div class="side-menu-header-logo">
+                                    <a href=" ">
+                                        <img class="brand-logo" alt="Petromin Logo" src="{{ asset('uploads/logo-01.png') }}">
+                                    </a>
+                                </div>
+                                <div class="side-menu-header-options">
+                                    <div class="header-lang">
+                                        {{-- <li class="lang-item lang-item-7 lang-item-en lang-item-first"><a lang="en-US" hreflang="en-US" href="https://.com/">English</a></li> --}}
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                         </div>
                         <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-2">
                             <span>الدخول للوحة التحكم </span>
                         </h6>
