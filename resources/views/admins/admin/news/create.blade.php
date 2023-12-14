@@ -7,9 +7,7 @@
         <x-view.alerts />
         <div class="card-header">
             <x-buttons.btn-back route="products.index" />
-
         </div>
-
         <div class="card-body">
             <form action="{{ route('products.store') }}" method="post" enctype="multipart/form-data">
                 @csrf

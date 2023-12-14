@@ -37,6 +37,8 @@ class CategoryIndex extends Component
     public $categoryId;
 
     public $name;
+    public $dec;
+    public $image;
 
     public $active = 1;
 
@@ -88,7 +90,6 @@ class CategoryIndex extends Component
     public function edit($categoryId)
     {
         $category = Category::findOrFail($categoryId);
-
         $this->categoryId = $categoryId;
         $this->name = $category->name;
         $this->active = $category->active;
@@ -110,12 +111,19 @@ class CategoryIndex extends Component
 
     public function store()
     {
+        // dd($this->name);
+        // dd($this->dec);
+        dd($this->image);
+
         $this->validate([
             'name' => 'required',
-            'active' => 'required',
-        ]);
+            'dec' => 'required',
+            'image' => 'nullable',
+         ]);
         Category::updateOrCreate(['id' => $this->categoryId], [
             'name' => $this->name,
+            'dec' => $this->dec,
+            'image' => $this->picture,
             'active' => $this->active,
         ]);
         session()->flash('message',

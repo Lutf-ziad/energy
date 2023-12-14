@@ -5,7 +5,7 @@
             <li class="nav-item active"><a href=""><i class="la la-mouse-pointer"></i><span
                         class="menu-title" data-i18n="nav.add_on_drag_drop.main">الرئيسية </span></a>
             </li>
-    <li class="nav-item  open ">
+    {{-- <li class="nav-item  open ">
         <a href="{{ route('categories') }}"><i class="la la-home"></i>
             <span class="menu-title" data-i18n="nav.dash.main"
                   class="menu-title" data-i18n="nav.add_on_drag_drop.main">قايمه انواع البطاريات  </span></a>        </span>
@@ -13,7 +13,21 @@
                 class="badge badge badge-info badge-pill float-right mr-2"> </span>
         </a>
 
-    </li>
+    </li> --}}
+    <li class="nav-item"><a href=""><i class="la la-group"></i>
+        <span class="menu-title" data-i18n="nav.dash.main">قايمه  brand</span>
+        <span
+            class="badge badge badge-danger badge-pill float-right mr-2">400</span>
+    </a>
+    <ul class="menu-content">
+        <li class="active"><a class="menu-item" href="{{ route('brands.index') }}"
+                              data-i18n="nav.dash.ecommerce"> عرض الكل </a>
+        </li>
+        <li><a class="menu-item" href="{{ route('brands.create') }}" data-i18n="nav.dash.crypto">أضافة
+                 brand</a>
+        </li>
+    </ul>
+</li>
     <li class="nav-item"><a href=""><i class="la la-group"></i>
         <span class="menu-title" data-i18n="nav.dash.main">البطاريات  </span>
         <span

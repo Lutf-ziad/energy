@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->text('picture')->nullable();
             $table->string('desc')->nullable();
-            $table->float('price');
-            $table->boolean('active')->default(1);
+            $table->string('brand')->nullable();
+             $table->boolean('active')->default(1);
             $table->boolean('special_offer')->default(0);
             $table->foreignId('categorie_id')->constrained()->restrictOnDelete();
             $table->timestamp('created_at')->useCurrent();

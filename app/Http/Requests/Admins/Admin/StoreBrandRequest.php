@@ -2,9 +2,11 @@
 
 namespace App\Http\Requests\Admins\Admin;
 
+use App\Models\Shop;
+use App\Rules\ExistRule;
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreProductRequest extends FormRequest
+class StoreBrandRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,13 +24,11 @@ class StoreProductRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'categorie_id' => ['required', 'integer', 'exists:categories,id'],
-            'name' => ['required', 'string', 'max:255'],
-            'picture' => ['nullable', 'image', 'mimes:'.config('app.ALLOED_IMAGE_EXTENSIONS'), 'max:'.config('app.ALLOED_IMAGE_SIZE')],
-            'desc' => ['nullable', 'string'],
+            'name'    => ['required', 'min:3', 'max:255'],
+            'descrption'    => ['required','max:1000'],
             'brand' => ['nullable', 'string'],
-            'active' => ['required', 'integer', 'in:0,1'],
-
+            'picture' => ['nullable', 'image', 'mimes:'.config('app.ALLOED_IMAGE_EXTENSIONS'), 'max:'.config('app.ALLOED_IMAGE_SIZE')],
+            'active'  => ['required', 'integer', 'in:0,1'],
         ];
     }
 }

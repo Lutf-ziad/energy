@@ -2208,6 +2208,8 @@ pre code {
 }
 .table-responsive > .table-bordered {
   border : 0;
+  /* margin-right: 1%; */
+
 }
 
 .form-control {
@@ -7637,13 +7639,13 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus {
   }
 }
 
-.float-left {
+/* .float-left {
   float : right !important;
-}
+} */
 
-.float-right {
+/* .float-right {
   float : left !important;
-}
+} */
 
 .float-none {
   float : none !important;

@@ -27,9 +27,10 @@
                         <td>{{ $product->desc }}</td>
                     </tr>
                     <tr>
-                        <th>{{ __('السعر') }}</th>
-                        <td>{{ $product->price }}</td>
+                        <th>{{ __('الشركه المصنعه') }}</th>
+                        <td>{{ $product->brand }}</td>
                     </tr>
+
                     <tr>
                         <th>{{ __('التفاعل') }}</th>
                         <td>{{ getStatus($product->active, ['Yes', 'No']) }}</td>

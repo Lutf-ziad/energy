@@ -73,6 +73,14 @@
                                 <td>{{ $name }}</td>
                             </tr>
                             <tr>
+                                <th>الوصف</th>
+                                <td>{{ $name }}</td>
+                            </tr>
+                            <tr>
+                                <th>الصوره</th>
+                                <td>{{ $name }}</td>
+                            </tr>
+                            <tr>
                                 <th>فعّال</th>
                                 <td> {{ getStatus($active) }}</td>
                             </tr>
@@ -88,6 +96,8 @@
                     @else
                         <form wire:submit.prevent="store()">
                             <x-livewire.inputs.text-input name="name" label="الاسم" />
+                            <x-livewire.inputs.text-input name="dec" label="الوصف" />
+                                <livewire:components.picture-upload>
                             <x-livewire.inputs.checkbox-input name="active" label="التفاعل" />
                         </form>
                     @endif

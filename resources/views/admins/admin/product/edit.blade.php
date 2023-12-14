@@ -19,11 +19,14 @@
                         <x-inputs.text-input label="الاسم" name="name" :value="$product->name" />
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <x-inputs.text-input label="الوصف" name="desc" :value="$product->desc" required="0"/>
+                        <x-inputs.text-input label="الشركه المصنعه" name="brand" :value="$product->brand" />
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <x-inputs.text-input type="الرقم" label="Price" name="price" :value="$product->price"/>
+                        <x-inputs.text-input label="الوصف" name="desc" :value="$product->desc" required="0"/>
                     </div>
+                    {{-- <div class="col-md-3 col-sm-6">
+                        <x-inputs.text-input type="الرقم" label="Price" name="price" :value="$product->price"/>
+                    </div> --}}
                     <div class="col-md-3 col-6">
                         <x-inputs.checkbox-input label="فعال" name="active" :value="$product->active" />
                     </div>

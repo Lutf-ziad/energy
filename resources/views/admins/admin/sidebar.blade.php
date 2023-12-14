@@ -6,13 +6,36 @@
         </p>
     </a>
 </li>
-<li class="nav-item">
+{{-- <li class="nav-item">
     <a href="{{ route('categories') }}" class="nav-link {{ getRequest('admin/categories', 'active') }}">
         <i class="fas fa-th nav-icon"></i>
-        <p>{{ __('قايمه انواع البطاريات    ') }}</p>
+        <p>{{ __('brand قايمه انواع البطاريات') }}</p>
     </a>
+</li> --}}
+<li class="nav-item {{ getRequest('admin/products*', 'menu-open') }}">
+    <a href="#" class="nav-link {{ getRequest('admin/products*', 'active') }}">
+        <i class="nav-icon fas fa-tags"></i>
+        <p>
+            {{ __(' brand قايمه البطاريات ') }}
+            <i class="left fas fa-angle-left"></i> <!-- RTL left -->
+        </p>
+    </a>
+    <ul class="nav nav-treeview">
+        <li class="nav-item">
+            <a href="{{ route('products.index') }}" class="nav-link {{ getRequest('admin/products', 'active') }}">
+                <i class="far fa-circle nav-icon"></i>
+                <p>{{ __(' brand قايمه البطاريات  ') }}</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{{ route('products.create') }}"
+                class="nav-link {{ getRequest('admin/products/create', 'active') }}">
+                <i class="far fa-circle nav-icon"></i>
+                <p>{{ __('  اضافه بطاريه') }}</p>
+            </a>
+        </li>
+    </ul>
 </li>
-
 <li class="nav-item {{ getRequest('admin/products*', 'menu-open') }}">
     <a href="#" class="nav-link {{ getRequest('admin/products*', 'active') }}">
         <i class="nav-icon fas fa-tags"></i>

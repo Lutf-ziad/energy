@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\Admins\Admin\Aboat;
 use App\Http\Controllers\Admins\Admin\BlogController;
 use App\Http\Controllers\Admins\Admin\ProductController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\site\Aboat as SiteAboat;
 use App\Http\Controllers\site\NewsController;
 use App\Http\Controllers\site\OffersController;
 use App\Http\Controllers\site\PrizeController;
@@ -16,9 +18,6 @@ Route::get('/', [WelcomeController::class,'index'])->name('site');
 Route::get('/Detiles/{id}', [WelcomeController::class,'show'])->name('detels.show');
  Route::get('/images/update/{id}',[ImageController::class,'update'])->name('images.update');
 Route::delete('/images/delete/{id}', [ImageController::class,'destroy'])->name('images.destroy');
-Route::get('/about', function () {
-    return view('site.about');
-});
 Route::get('/services', function () {
     return view('site.book-a-service');
 });
@@ -28,12 +27,13 @@ Route::get('/changan', function () {
 Route::get('/new_details', function () {
     return view('site.new_details');
 });
+Route::get('/about', [SiteAboat::class, 'index'])->name('aboat')->withTrashed();
 Route::get('/prize', [PrizeController::class, 'index'])->name('prize')->withTrashed();
 Route::get('/news', [NewsController::class, 'index'])->name('new')->withTrashed();
 Route::get('/new-detail/{id}', [NewsController::class, 'ditels'])->name('new-detail')->withTrashed();
-Route::get('/offers', [OffersController::class, 'index'])->name('product')->withTrashed();
+Route::get('/product', [OffersController::class, 'index'])->name('product')->withTrashed();
 Route::get('/teme', [TemeController::class, 'index'])->name('teme')->withTrashed();
-Route::get('/offer-detail/{id}', [OffersController::class, 'ditels'])->name('offer-detail')->withTrashed();
+Route::get('/product-detail/{id}', [OffersController::class, 'ditels'])->name('product-detail')->withTrashed();
 Route::get('/Sustainability', function () {
     return view('site.Sustainability');
 });

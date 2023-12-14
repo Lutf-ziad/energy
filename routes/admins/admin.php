@@ -5,6 +5,7 @@ use App\Http\Controllers\Admins\Admin\ClientController;
 use App\Http\Controllers\Admins\Admin\ProductController;
 use App\Http\Controllers\Admins\Admin\PromotionController;
 use App\Http\Controllers\Admins\Admin\BlogController;
+use App\Http\Controllers\Admins\Admin\BrandController;
 use App\Http\Controllers\Admins\Admin\ContactusController;
 use App\Http\Controllers\Admins\Admin\Management_team;
 use App\Http\Controllers\ContactuController;
@@ -45,6 +46,12 @@ Route::middleware(['AdminAuth'])->group(function () {
     Route::post('products/{product}/restore', [ProductController::class, 'restore'])->name('products.restore')->withTrashed();
     Route::resource('products', ProductController::class)->withTrashed();
     // end route products
+     //star route brand
+     Route::get('brands/{brands}/change-active', [BrandController::class, 'changeActive'])->name('brands.change-active')->withTrashed();
+     Route::post('brands/{brands}/force-delete', [BrandController::class, 'forceDelete'])->name('brands.force-delete')->withTrashed();
+     Route::post('brands/{brands}/restore', [BrandController::class, 'restore'])->name('brands.restore')->withTrashed();
+     Route::resource('brands', BrandController::class)->withTrashed();
+     // end route brand
     Route::get('prizes/{prizes}/change-active', [Achievements_prizesController::class, 'changeActive'])->name('prizes.change-active')->withTrashed();
     Route::post('prizes/{prizes}/force-delete', [Achievements_prizesController::class, 'forceDelete'])->name('prizes.force-delete')->withTrashed();
     Route::post('prizes/{prizes}restore', [Achievements_prizesController::class, 'restore'])->name('prizes.restore')->withTrashed();

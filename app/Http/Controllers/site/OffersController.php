@@ -17,11 +17,12 @@ class OffersController extends Controller
 {
     public function index()
     {
-        $products = Product::query()->with('categorie')->get();
-        return view('site.offers',compact('products'));
+         $products = Category::query()->get();
+         return view('site.offers',compact('products'));
     }
     public function  ditels($id){
-        $products = Product::where('id', $id)->get();
-         return view('site.offer-detail',compact('products'));
+         $catgory = Category::where('id', $id)->get();
+         $products = Product::where('categorie_id', $id)->get();
+           return view('site.offer-detail',compact('products','catgory'));
    }
 }

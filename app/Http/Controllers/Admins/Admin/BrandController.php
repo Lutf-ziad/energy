@@ -3,9 +3,12 @@
 namespace App\Http\Controllers\Admins\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Livewire\Admins\Admin\BrandIndex;
 use App\Http\Livewire\Admins\Admin\ProductIndex;
 use App\Http\Requests\Admins\Admin\StoreBlogRequest;
+use App\Http\Requests\Admins\Admin\StoreBrandRequest;
 use App\Http\Requests\Admins\Admin\StoreProductRequest;
+use App\Http\Requests\Admins\Admin\UpdateBlogRequest;
 use App\Http\Requests\Admins\Admin\UpdateProductRequest;
 use App\Models\Category;
 use App\Models\Product;
@@ -13,21 +16,20 @@ use App\Models\Blog;
 use Exception;
 use Illuminate\Support\Facades\App;
 
-class ProductController extends Controller
+class BrandController extends Controller
 {
     public function index()
     {
-        return App::call(ProductIndex::class);
+        return App::call(BrandIndex::class);
     }
     public function create()
     {
-        $Category = Category::select('id', 'name')->get();
-        return view('admins.admin.product.create', compact('Category'));
+        return view('admins.admin.brand.create');
     }
 
-    public function store(StoreProductRequest $request)
+    public function store(StoreBrandRequest $request)
     {
-            try {
+           try {
             if ($request->has('image')) {
                 $picture = setStorage('Blog', $request->image);
                 $data = array_merge($request->validated(), [
@@ -36,7 +38,7 @@ class ProductController extends Controller
             } else {
                 $data = $request->validated();
             }
-             if (Product::create($data)) {
+             if (Category::create($data)) {
                 return successMessage('تم الاضافه');
             } else {
                 return errorMessage('لم يتم الاضافه');
@@ -46,30 +48,28 @@ class ProductController extends Controller
         }
     }
 
-    public function show(Product $product)
+    public function show(Category $brand)
     {
         // $product->load('categorie');
         try {
-            return view('admins.admin.product.show', compact('product') );
+            return view('admins.admin.brand.show', compact('brand') );
         } catch (Exception $e) {
             return handleErrors($e);
         }
     }
 
-    public function edit(Product $product)
+    public function edit(Category $brand)
     {
-         $Catgry = Category::select('id', 'name')->get();
-
-        return view('admins.admin.product.edit', compact('product', 'Catgry'));
+        return view('admins.admin.brand.edit', compact('brand'));
     }
 
-    public function update(UpdateProductRequest $request, Product $product)
+    public function update(UpdateBlogRequest $request, Category $product)
     {
 
         try {
 
             if ($product->update($request->validated())) {
-                return to_route('products.index')->with('message', ['type' => 'success', 'text' => 'Update Product Successfuly']);
+                return to_route('brands.index')->with('message', ['type' => 'success', 'text' => 'Update Product Successfuly']);
             } else {
                 return errorMessage('Update product has not be completed');
             }
@@ -78,7 +78,7 @@ class ProductController extends Controller
         }
     }
 
-    public function destroy(Product $product)
+    public function destroy(Category $product)
     {
         try {
             $product->delete();
@@ -89,7 +89,7 @@ class ProductController extends Controller
         }
     }
 
-    public function forceDelete(Product $product)
+    public function forceDelete(Category $product)
     {
         try {
             $product->forceDelete();

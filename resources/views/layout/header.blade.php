@@ -44,7 +44,7 @@
                                 <a href="{{ url('complain') }}" title="فريق القادة" class="menu-item menu-item-type-post_type menu-item-object-page nav-link" target="">فريق القادة</a>
                             </li> --}}
                             <li class="li-wrapper">
-                                <a href="{{ url('offers') }}" title="المنتجات" class="menu-item menu-item-type-post_type menu-item-object-page nav-link" target="">المنتجات</a>
+                                <a href="{{ route('product') }}" title="المنتجات" class="menu-item menu-item-type-post_type menu-item-object-page nav-link" target="">المنتجات</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">الفروع</a>

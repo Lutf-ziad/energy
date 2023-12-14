@@ -29,8 +29,8 @@
                             <th>صوره</th>
                             <th>نوع البطاريه</th>
                             <th>الوصف</th>
-                            <th>السعر</th>
-                            <th>التفاعل</th>
+                            <th>الشركه المصنعه</th>
+                             <th>التفاعل</th>
                             <th>الانشطه</th>
                         </tr>
                     </thead>
@@ -48,8 +48,8 @@
                                 </td>
                                 <td><a href="{{route("products.show",$product->categorie_id)}}">{{ $product->categorie->name }}</a></td>
                                 <td>{{ Str::limit($product->desc,30) }}</td>
-                                <td>{{ $product->price }}</td>
-                                <td>{{ getStatus($product->active) }}</td>
+                                <td>{{ Str::limit($product->brand) }}</td>
+                                 <td>{{ getStatus($product->active) }}</td>
                                 <td class="text-center">
                                      <x-buttons.btn-show route="products.show" :id="$product" />
                                     <x-buttons.btn-edit route="products.edit" :id="$product" />
@@ -61,11 +61,9 @@
                                     @endif
                                     @php
                                         $actions = [['route' => 'products.change-active', 'label' => $product->active ? 'InActive' : 'Active', 'id' => $product]];
-                                        $action = [['route' => 'image.index', 'label'  => 'Image', 'id' => $product]];
-                                    @endphp
+                                     @endphp
                                     <x-buttons.btn-more :actions="$actions" />
-                                    <x-buttons.btn-more :actions="$action" />
-                                 </td>
+                                  </td>
                             </tr>
                         @empty
                             <tr class="text-center">

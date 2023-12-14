@@ -57,68 +57,19 @@
                 </h2>
                 <div class="achievements-slider">
                     <div class="owl-carousel owl-theme" id="achieveSlider">
+                        @foreach($newsArticles as $news)
                         <div class="achieve-slider-col">
                             <a href="javascript:void(0);" class="embed-responsive embed-responsive-16by9">
-                                <img src="{{ asset('uploads/n2.jpg') }}" alt=""
-                                    class="embed-responsive-item">
-                                <span class="label">2021</span>
-                            </a>
-                            <h5 data-mh="achieve-title">
-                                <small>changan <span><i class="fa fa-calendar-alt"></i> 2021</span></small>
-                                وعدناكم بتقديم أفضل ما لدينا، فحصلنا على الأفضل. فريق المجدوعي يشارككم نجاحاته بحصوله على جائزة أفضل مركز دعم فني عالميا بين وكلاء هيونداي #المجدوعي_بيت_هيونداي
-
-                            </h5>
-                        </div>
-                        <div class="achieve-slider-col">
-                            <a href="javascript:void(0);" class="embed-responsive embed-responsive-16by9">
-                                <img src="{{ asset('uploads/n.jpg') }}" alt=""
-                                    class="embed-responsive-item">
-                                <span class="label">2021</span>
-                            </a>
-                            <h5 data-mh="achieve-title">
-                                <small>changan <span><i class="fa fa-calendar-alt"></i> 2021</span></small>
-                                تتميز بهداكم درع التميز بالتميز والجودة
-                            </h5>
-                        </div>
-                        <div class="achieve-slider-col">
-                            <a href="javascript:void(0);" class="embed-responsive embed-responsive-16by9">
-                                <img src="{{ asset('uploads/n3.jpg') }}" alt=""
-                                    class="embed-responsive-item">
-                                <span class="label">2021</span>
-                            </a>
-                            <h5 data-mh="achieve-title">
-                                <small>changan <span><i class="fa fa-calendar-alt"></i> 2021</span></small>
-                                CS35Plus received the best Crossover car of 2020 from Saudi Auto magazine.
-                            </h5>
-                        </div>
-
-
-                        <div class="achieve-slider-col">
-                            <a href="javascript:void(0);" class="embed-responsive embed-responsive-16by9">
-                                <img src="{{ asset('upload/cms/achievement/1/achievement.jpg?keycode=179ea4b79d') }}" alt=""
-                                    class="embed-responsive-item">
-                                <span class="label">2018</span>
-                            </a>
-                            <h5 data-mh="achieve-title">
-                                <small>Hyundai <span><i class="fa fa-calendar-alt"></i> 2018</span></small>
-                                We are proud to announce receiving the best service and customer satisfaction award among
-                                the Middle East and Africa distributors for 2018.
-                            </h5>
-                        </div>
-
-
-                        <div class="achieve-slider-col">
-                            <a href="javascript:void(0);" class="embed-responsive embed-responsive-16by9">
-                                <img src="{{ asset('upload/cms/achievement/4/achievement.jpg?keycode=a113601ac1') }}" alt=""
+                                <img src="{{ asset('images/'.$news->picture) }}" alt=""
                                     class="embed-responsive-item">
                                 <span class="label">2017</span>
                             </a>
                             <h5 data-mh="achieve-title">
                                 <small>Hyundai <span><i class="fa fa-calendar-alt"></i> 2017</span></small>
-                                Motors received the Excellence Award from Hyundai in after-sales services at the
-                                level of
+                                {{ substr($news->descrption, 0, 200) }}
                             </h5>
                         </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
