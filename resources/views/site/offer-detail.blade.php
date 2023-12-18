@@ -66,9 +66,11 @@
      @foreach($products as $product)
       <div class="item medium">
         <img src="{{ asset('images/'.$product->picture) }}" alt="Image 1 Medium">
-        <h3 style="text-align: center;font-size: 20px">{{ $product->name }}</h3>
+        <a href="{{ route('product-brand', $product->id) }}">
+        <h3  style="text-align: center;font-size: 20px">{{ $product->name }}</h3>
         <p style="text-align: center;font-size: 20px">{{ $product->desc }}</p>
-        {{-- <a href="{{ route('product-detail', $product->id) }}" class="btn">قراه المزيد</a> --}}
+        </a>
+        {{-- <a href="{{ route('product-detail', $product->id) }}" class="btn">قراه ا/a>لمزيد< --}}
       </div>
     @endforeach
     <!-- Add more slides as needed -->

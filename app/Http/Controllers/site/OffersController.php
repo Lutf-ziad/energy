@@ -25,4 +25,5 @@ class OffersController extends Controller
          $products = Product::where('categorie_id', $id)->get();
            return view('site.offer-detail',compact('products','catgory'));
    }
+
 }

@@ -33,7 +33,9 @@ Route::get('/news', [NewsController::class, 'index'])->name('new')->withTrashed(
 Route::get('/new-detail/{id}', [NewsController::class, 'ditels'])->name('new-detail')->withTrashed();
 Route::get('/product', [OffersController::class, 'index'])->name('product')->withTrashed();
 Route::get('/teme', [TemeController::class, 'index'])->name('teme')->withTrashed();
-Route::get('/product-detail/{id}', [OffersController::class, 'ditels'])->name('product-detail')->withTrashed();
+Route::get('/product-detai/{id}', [OffersController::class, 'ditels'])->name('product-detail')->withTrashed();
+Route::get('/product-detail/{id}', [OffersController::class, 'brand'])->name('product-brand')->withTrashed();
+
 Route::get('/Sustainability', function () {
     return view('site.Sustainability');
 });

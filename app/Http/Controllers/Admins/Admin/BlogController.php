@@ -32,8 +32,7 @@ class BlogController extends Controller
 
     public function store(StoreBlogRequest $request)
     {
-        dd($request->all());
-        try {
+         try {
             if ($request->has('image')) {
                 $picture = setStorage('Blog', $request->image);
                 $data = array_merge($request->validated(), [
