@@ -12,6 +12,7 @@ use App\Models\Product;
 use App\Models\Blog;
 use Exception;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\DB;
 
 class OffersController extends Controller
 {
@@ -25,5 +26,11 @@ class OffersController extends Controller
          $products = Product::where('categorie_id', $id)->get();
            return view('site.offer-detail',compact('products','catgory'));
    }
+   public function  brand($id){
+     $catgor = Product::where('id', $id)->value('categorie_id');
+    $catgory = Product::where('id', $id)->get();
+    $products = Product::where('categorie_id', $catgor)->get();
+      return view('site.offer-detail',compact('products','catgory'));
+}
 
 }

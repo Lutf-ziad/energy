@@ -63,10 +63,10 @@
   @endforeach
   <h2 style="text-align: center">منتجات ذات صلة</h2>
   <div class="owl-carousel">
-     @foreach($products as $product)
+      @foreach($products as $product)
       <div class="item medium">
         <img src="{{ asset('images/'.$product->picture) }}" alt="Image 1 Medium">
-        <a href="{{ route('product-brand', $product->id) }}">
+        <a href="{{ route('product-brand', $product->id,$catgory) }}">
         <h3  style="text-align: center;font-size: 20px">{{ $product->name }}</h3>
         <p style="text-align: center;font-size: 20px">{{ $product->desc }}</p>
         </a>
